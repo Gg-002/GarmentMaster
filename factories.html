@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="factories.hero.title" data-i18n-meta="title">200+ 家工厂 — 佛山衣主</title>
+  <meta name="description" data-i18n="factories.hero.subtitle" data-i18n-meta="description" content="">
+
+  <link rel="alternate" hreflang="x-default" href="factories.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2300e0a4'/><text x='16' y='22' text-anchor='middle' font-family='monospace' font-weight='900' font-size='14' fill='%230a0e14'>GF</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="factories">
+
+  <div data-site-header-slot></div>
+
+  <main id="main">
+
+    <section class="page-hero" aria-label="Factories hero">
+      <div class="container">
+        <div class="reveal">
+          <div class="page-hero__eyebrow" data-i18n="factories.hero.eyebrow">// FACTORIES / OVERVIEW</div>
+          <h1 class="page-hero__title" data-i18n="factories.hero.title">200+ 家工厂</h1>
+          <p class="page-hero__subtitle" data-i18n="factories.hero.subtitle">覆盖针织/梭织/牛仔/外套/童装/运动/泳装/丝绸/工装/羊毛/家居/时尚 12 大品类</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="factories-layout">
+
+          <!-- Filters Sidebar (desktop) -->
+          <aside class="filters reveal" data-filters-sidebar>
+            <div class="filters__title" data-i18n="factories.filters.title">筛选条件</div>
+
+            <div class="filters__group">
+              <div class="filters__group-title" data-i18n="factories.filters.category">品类</div>
+              <div data-filter-group="categories"></div>
+            </div>
+
+            <div class="filters__group">
+              <div class="filters__group-title" data-i18n="factories.filters.moq">起订量</div>
+              <div data-filter-group="moq"></div>
+            </div>
+
+            <div class="filters__group">
+              <div class="filters__group-title" data-i18n="factories.filters.capacity">月产能</div>
+              <div data-filter-group="capacity"></div>
+            </div>
+
+            <div class="filters__group">
+              <div class="filters__group-title" data-i18n="factories.filters.certification">认证</div>
+              <div data-filter-group="certifications"></div>
+            </div>
+
+            <button class="filters__reset" data-filter-reset>
+              <span>×</span>
+              <span data-i18n="common.reset">重置</span>
+            </button>
+          </aside>
+
+          <!-- Mobile filter trigger + drawer -->
+          <button class="factories-mobile-filter" data-filters-toggle>
+            <span data-svg="filter"></span>
+            <span data-i18n="common.filter">筛选</span>
+          </button>
+
+          <div class="filters-overlay" data-filters-overlay></div>
+          <div class="filters-drawer" data-filters-drawer>
+            <div class="filters-drawer__head">
+              <div class="filters__title" data-i18n="factories.filters.title">筛选条件</div>
+              <button class="contact-fab__close" data-filters-close>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </button>
+            </div>
+            <div class="filters-drawer__body" data-filters-drawer-body></div>
+            <div class="filters-drawer__foot">
+              <button class="btn btn--ghost" data-filters-reset-mb>
+                <span data-i18n="common.reset">重置</span>
+              </button>
+              <button class="btn btn--primary" data-filters-apply-mb>
+                <span data-i18n="common.apply">应用</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: result -->
+          <div>
+            <div class="factory-result-bar">
+              <div class="factory-result-bar__count" data-result-count>
+                <strong data-result-num>12</strong>
+                <span data-i18n="factories.filters.result" data-result-text>共找到 200+ 家工厂</span>
+              </div>
+              <div class="factory-result-bar__sort">
+                <span data-i18n="factories.filters.sort">排序</span>
+                <select data-sort-select>
+                  <option value="capacity:desc" data-i18n="factories.filters.sortBy.capacity">月产能</option>
+                  <option value="established:desc" data-i18n="factories.filters.sortBy.established">成立年份</option>
+                  <option value="name:asc" data-i18n="factories.filters.sortBy.name">名称</option>
+                  <option value="moq:asc" data-i18n="factories.filters.sortBy.moq">起订量</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="factory-grid reveal-stagger" data-factory-grid>
+              <!-- 由 JS 注入 -->
+            </div>
+
+            <div class="empty-state" data-factory-empty hidden>
+              <div class="empty-state__icon">∅</div>
+              <div class="empty-state__title" data-i18n="factories.empty.title">没有匹配的工厂</div>
+              <div class="empty-state__desc" data-i18n="factories.empty.desc">试试调整筛选条件，或直接联系我们为您推荐。</div>
+              <a href="contact.html" class="btn btn--primary">
+                <span data-i18n="factories.empty.cta">联系我们</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer-slot></div>
+
+  <script src="assets/i18n/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/factories.js" defer></script>
+</body>
+</html>

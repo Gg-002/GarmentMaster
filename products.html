@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="products.hero.title" data-i18n-meta="title">样衣产品图 — 佛山衣主</title>
+  <meta name="description" data-i18n="products.hero.subtitle" data-i18n-meta="description" content="">
+
+  <link rel="alternate" hreflang="x-default" href="products.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2300e0a4'/><text x='16' y='22' text-anchor='middle' font-family='monospace' font-weight='900' font-size='14' fill='%230a0e14'>FG</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="products">
+
+  <div data-site-header-slot></div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="reveal">
+          <div class="page-hero__eyebrow" data-i18n="products.hero.eyebrow">// 10.0 / SAMPLE PRODUCTS</div>
+          <h1 class="page-hero__title" data-i18n="products.hero.title">样衣产品图</h1>
+          <p class="page-hero__subtitle" data-i18n="products.hero.subtitle">FOSHAN GarmentMaster 出品的童装系列样衣 — 全部支持 OEM/ODM 来样定制</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="product-grid reveal-stagger" data-product-grid>
+          <!-- 由 JS 注入 -->
+        </div>
+
+        <div class="cta-block mt-8 reveal">
+          <span class="section-tag">// OEM / ODM</span>
+          <h2 class="cta-block__title" data-i18n="products.cta.title">需要更多款式？</h2>
+          <p class="cta-block__lead" data-i18n="products.cta.lead">我们可以按您的设计图、样衣或技术包 1:1 复刻生产。</p>
+          <a href="contact.html" class="btn btn--primary btn--lg btn--clip">
+            <span data-i18n="products.cta.btn">联系定制</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <span class="section-watermark">SP</span>
+    </section>
+
+  </main>
+
+  <div data-site-footer-slot></div>
+
+  <script src="assets/i18n/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    (async function() {
+      function getLang() { return (window.i18n && window.i18n.getLanguage()) || 'zh-CN'; }
+      function pick(o) {
+        if (!o) return '';
+        if (typeof o === 'string') return o;
+        const lang = getLang();
+        if (o[lang] !== undefined) return o[lang];
+        const b = lang.split('-')[0];
+        if (o[b] !== undefined) return o[b];
+        if (o.en !== undefined) return o.en;
+        return Object.values(o)[0] || '';
+      }
+      function t(k) { return window.i18n ? window.i18n.t(k) : k; }
+
+      async function render() {
+        const res = await fetch('assets/data/products.json');
+        const data = await res.json();
+        const grid = document.querySelector('[data-product-grid]');
+        if (!grid) return;
+        grid.innerHTML = data.products.map(p => `
+<a class="product-card" href="contact.html?product=${encodeURIComponent(p.code)}">
+  <div class="product-card__media">
+    <img src="assets/images/products/${p.image}" alt="${pick(p.name)}" loading="lazy" class="product-card__img">
+    <div class="product-card__media-overlay"></div>
+    <span class="product-card__code mono">${p.code}</span>
+  </div>
+  <div class="product-card__body">
+    <h3 class="product-card__name">${pick(p.name)}</h3>
+    <div class="product-card__meta">
+      <span class="product-card__meta-item">
+        <span class="product-card__meta-label">Color</span>
+        <span class="product-card__meta-value">${pick(p.color)}</span>
+      </span>
+      <span class="product-card__meta-item">
+        <span class="product-card__meta-label">Size</span>
+        <span class="product-card__meta-value mono">${p.size}</span>
+      </span>
+    </div>
+    <div class="product-card__row">
+      <div>
+        <span class="product-card__meta-label">Fabric</span>
+        <span class="product-card__meta-value">${p.fabric}</span>
+      </div>
+    </div>
+    <div class="product-card__stats">
+      <div class="product-card__stat">
+        <span class="product-card__meta-label">${t('products.card.moq')}</span>
+        <span class="product-card__stat-value mono">${p.moq}</span>
+      </div>
+      <div class="product-card__stat">
+        <span class="product-card__meta-label">${t('products.card.leadTime')}</span>
+        <span class="product-card__stat-value mono">${p.leadTime}d</span>
+      </div>
+      <a href="contact.html?product=${encodeURIComponent(p.code)}" class="product-card__cta">${t('products.card.inquire')}</a>
+    </div>
+  </div>
+</a>`).join('');
+        document.dispatchEvent(new CustomEvent('i18n:applied', { detail: { lang: getLang() } }));
+      }
+      if (window.i18n) render();
+      else document.addEventListener('i18n:applied', render, { once: true });
+    })();
+  </script>
+</body>
+</html>

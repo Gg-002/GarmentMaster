@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "updatedAt": "2026-06-10",
+    "description": "客户案例库 - 跨品类合作成果展示"
+  },
+  "cases": [
+    {
+      "id": "case-001",
+      "title": {
+        "zh": "为北欧户外品牌 35 天交付 8 万件抓绒衣",
+        "en": "80K fleece jackets delivered in 35 days for Nordic outdoor brand",
+        "es": "80K chaquetas polar entregadas en 35 días para marca nórdica",
+        "ru": "80K флисовых курток за 35 дней для скандинавского бренда",
+        "ar": "80 ألف سترة فليس في 35 يومًا لعلامة إسكندنافية",
+        "fr": "80K vestes polaires livrées en 35 jours pour une marque nordique"
+      },
+      "category": "knit",
+      "factory": "fz-001",
+      "brand": "NordicStyle",
+      "country": "SE",
+      "year": 2024,
+      "quantity": 80000,
+      "leadTime": 35,
+      "summary": {
+        "zh": "紧急订单 35 天完成首批 8 万件交付，节省客户 12% 面料损耗。",
+        "en": "Emergency bulk order completed in 35 days, saving client 12% fabric waste.",
+        "es": "Pedido urgente completado en 35 días, ahorrando 12% de tela.",
+        "ru": "Срочный заказ выполнен за 35 дней, экономия ткани 12%.",
+        "ar": "اكتمل الطلب الطارئ خلال 35 يومًا، توفير 12% من القماش.",
+        "fr": "Commande urgente livrée en 35 jours, économie de 12% de tissu."
+      },
+      "image": "case-001.jpg"
+    },
+    {
+      "id": "case-002",
+      "title": {
+        "zh": "意大利高级时装品牌小单快返 800 件真丝礼服",
+        "en": "800 silk evening gowns for Italian haute couture in small-batch QRS",
+        "es": "800 vestidos de seda para alta costura italiana en QRS pequeño lote",
+        "ru": "800 шёлковых вечерних платьев для итальянского кутюре малыми партиями",
+        "ar": "800 فستان حرير للأزياء الراقية الإيطالية بدفعات صغيرة",
+        "fr": "800 robes en soie pour la haute couture italienne en petites séries"
+      },
+      "category": "silk",
+      "factory": "fz-008",
+      "brand": "CoutureHouse",
+      "country": "FR",
+      "year": 2024,
+      "quantity": 800,
+      "leadTime": 25,
+      "summary": {
+        "zh": "苏绣大师团队定制，7 天出样、25 天交付，单件工时 18 小时。",
+        "en": "Su embroidery master team. 7-day sample, 25-day delivery. 18 hours per piece.",
+        "es": "Equipo maestro de bordado Su. Muestra 7 días, entrega 25 días. 18 horas/pieza.",
+        "ru": "Мастера вышивки Су. Образец 7 дней, доставка 25 дней. 18 часов на изделие.",
+        "ar": "فريق أساتذة تطريز سو. عينة 7 أيام، تسليم 25 يومًا. 18 ساعة للقطعة.",
+        "fr": "Équipe maître broderie Su. Échantillon 7 jours, livraison 25 jours. 18h/pièce."
+      },
+      "image": "case-002.jpg"
+    },
+    {
+      "id": "case-003",
+      "title": {
+        "zh": "中东能源公司 3 万件阻燃工装",
+        "en": "30K FR coveralls for Middle East energy major",
+        "es": "30K monos FR para gran empresa energética de Medio Oriente",
+        "ru": "30K огнестойких комбинезонов для энергетической компании Ближнего Востока",
+        "ar": "30 ألف بدلة مقاومة للحريق لشركة طاقة في الشرق الأوسط",
+        "fr": "30K combinaisons FR pour un géant énergétique du Moyen-Orient"
+      },
+      "category": "workwear",
+      "factory": "fz-010",
+      "brand": "EnergyCo",
+      "country": "SA",
+      "year": 2024,
+      "quantity": 30000,
+      "leadTime": 40,
+      "summary": {
+        "zh": "NFPA 2112 阻燃标准通过，单价较欧美 OEM 低 28%。",
+        "en": "NFPA 2112 FR standard passed. 28% lower unit cost than EU/US OEM.",
+        "es": "Estándar NFPA 2112 cumplido. 28% menor costo unitario que UE/EE.UU.",
+        "ru": "Стандарт NFPA 2112 пройден. На 28% дешевле OEM ЕС/США.",
+        "ar": "اجتياز معيار NFPA 2112. أرخص 28% من OEM الأوروبي/الأمريكي.",
+        "fr": "Norme NFPA 2112 validée. 28% moins cher que l'OEM UE/US."
+      },
+      "image": "case-003.jpg"
+    },
+    {
+      "id": "case-004",
+      "title": {
+        "zh": "美国童装品牌 4 万套新生儿礼盒",
+        "en": "40K newborn gift sets for US baby brand",
+        "es": "40K sets para recién nacidos para marca de bebés de EE.UU.",
+        "ru": "40K подарочных наборов для новорождённых для американского детского бренда",
+        "ar": "40 ألف طقم مواليد لعلامة أطفال أمريكية",
+        "fr": "40K coffrets nouveau-né pour une marque bébé US"
+      },
+      "category": "kids",
+      "factory": "fz-007",
+      "brand": "BabyBrand",
+      "country": "UK",
+      "year": 2024,
+      "quantity": 40000,
+      "leadTime": 30,
+      "summary": {
+        "zh": "GOTS 有机棉认证，A 类母婴标准，礼盒含 8 件套。",
+        "en": "GOTS organic cotton. Class A infant-safe. 8-piece gift set.",
+        "es": "Algodón orgánico GOTS. Clase A bebé. Set de 8 piezas.",
+        "ru": "Органический хлопок GOTS. Класс A. Набор из 8 предметов.",
+        "ar": "قطن عضوي GOTS. الفئة A للرضع. طقم 8 قطع.",
+        "fr": "Coton bio GOTS. Classe A bébé. Coffret 8 pièces."
+      },
+      "image": "case-004.jpg"
+    },
+    {
+      "id": "case-005",
+      "title": {
+        "zh": "巴西泳装品牌 2.8 万件印花沙滩裤",
+        "en": "28K printed beach shorts for Brazilian swim brand",
+        "es": "28K pantalones de playa estampados para marca brasileña",
+        "ru": "28K пляжных шорт с принтом для бразильского бренда",
+        "ar": "28 ألف شورت شاطئ مطبوع لعلامة برازيلية",
+        "fr": "28K shorts de plage imprimés pour une marque brésilienne"
+      },
+      "category": "swim",
+      "factory": "fz-009",
+      "brand": "TropicWear",
+      "country": "BR",
+      "year": 2024,
+      "quantity": 28000,
+      "leadTime": 30,
+      "summary": {
+        "zh": "24h 数码打样，色彩 ΔE<1.5，覆盖 12 个 SKU。",
+        "en": "24h digital sampling, ΔE<1.5 color accuracy, 12 SKUs covered.",
+        "es": "Muestreo digital 24h, ΔE<1.5 precisión de color, 12 SKU.",
+        "ru": "Цифровая выборка 24ч, точность ΔE<1.5, 12 SKU.",
+        "ar": "عيّنة رقمية 24 ساعة، دقة ألوان ΔE<1.5، 12 منتجًا.",
+        "fr": "Échantillonnage numérique 24h, ΔE<1.5, 12 SKU."
+      },
+      "image": "case-005.jpg"
+    },
+    {
+      "id": "case-006",
+      "title": {
+        "zh": "意大利奢华羊绒品牌 1.2 万件超细支羊绒衫",
+        "en": "12K ultra-fine cashmere sweaters for Italian luxury brand",
+        "es": "12K suéteres de cachemir ultrafino para marca de lujo italiana",
+        "ru": "12K сверхтонких кашемировых свитеров для итальянского люкса",
+        "ar": "12 ألف كنزة كشمير فاخرة لعلامة إيطالية فاخرة",
+        "fr": "12K pulls cachemire ultra-fins pour une marque de luxe italienne"
+      },
+      "category": "wool",
+      "factory": "fz-011",
+      "brand": "LuxeCashmere",
+      "country": "IT",
+      "year": 2024,
+      "quantity": 12000,
+      "leadTime": 45,
+      "summary": {
+        "zh": "14.5μm 超细支羊绒，原绒到成衣全产业链把控。",
+        "en": "14.5μm ultra-fine cashmere. Full chain control from raw fiber to garment.",
+        "es": "Cachemir ultrafino 14.5μm. Control de cadena completa.",
+        "ru": "Кашемир 14.5мкм. Полный контроль цепочки от сырья до изделия.",
+        "ar": "كشمير 14.5 ميكرومتر فائق النعومة. تحكم كامل بالسلسلة.",
+        "fr": "Cachemire 14.5μm. Contrôle total de la chaîne."
+      },
+      "image": "case-006.jpg"
+    },
+    {
+      "id": "case-007",
+      "title": {
+        "zh": "澳洲运动品牌 3.5 万套瑜伽服",
+        "en": "35K yoga sets for Australian activewear brand",
+        "es": "35K conjuntos de yoga para marca australiana de activewear",
+        "ru": "35K комплектов для йоги для австралийского бренда",
+        "ar": "35 ألف طقم يوغا لعلامة أزياء رياضية أسترالية",
+        "fr": "35K ensembles yoga pour une marque australienne"
+      },
+      "category": "sport",
+      "factory": "fz-006",
+      "brand": "ActiveLife",
+      "country": "AU",
+      "year": 2024,
+      "quantity": 35000,
+      "leadTime": 35,
+      "summary": {
+        "zh": "SANTONI 无缝针织 + 高弹氨纶，4 向弹力 280%。",
+        "en": "SANTONI seamless + high-stretch spandex, 4-way stretch 280%.",
+        "es": "SANTONI sin costuras + spandex de alta elasticidad, 4 vías 280%.",
+        "ru": "SANTONI бесшовная + высокоэластичный спандекс, 4-стороннее 280%.",
+        "ar": "SANTONI بدون درزات + سباندكس عالي المرونة، 280% 4 اتجاهات.",
+        "fr": "SANTONI sans couture + spandex haute élasticité, 4 sens 280%."
+      },
+      "image": "case-007.jpg"
+    },
+    {
+      "id": "case-008",
+      "title": {
+        "zh": "韩国时装周 200 件样衣 7 天交付",
+        "en": "200 runway looks delivered in 7 days for Seoul Fashion Week",
+        "es": "200 looks de pasarela entregados en 7 días para Seoul Fashion Week",
+        "ru": "200 подиумных образов за 7 дней для Сеульской недели моды",
+        "ar": "200 إطلالة منصة في 7 أيام لأسبوع سيول للموضة",
+        "fr": "200 looks runway livrés en 7 jours pour la Seoul Fashion Week"
+      },
+      "category": "fashion",
+      "factory": "fz-005",
+      "brand": "StudioX",
+      "country": "KR",
+      "year": 2024,
+      "quantity": 200,
+      "leadTime": 7,
+      "summary": {
+        "zh": "上海时装周常驻合作，1 件起单，专为快时尚打造。",
+        "en": "Shanghai Fashion Week partner. 1-piece MOQ. Built for fast fashion.",
+        "es": "Socio de Shanghai Fashion Week. MOQ 1 pieza. Hecho para fast fashion.",
+        "ru": "Партнёр Шанхайской недели моды. MOQ 1 шт. Для fast fashion.",
+        "ar": "شريك أسبوع شنغهاي للموضة. 1 قطعة كحد أدنى. للأزياء السريعة.",
+        "fr": "Partenaire Shanghai Fashion Week. MOQ 1 pièce. Pour la fast fashion."
+      },
+      "image": "case-008.jpg"
+    }
+  ]
+}

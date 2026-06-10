@@ -1,0 +1,275 @@
+/* ===================================================================
+ * rtl.css — Arabic (RTL) 镜像样式
+ * --------------------------------------------------------------------
+ * 主要逻辑:
+ * 1. 翻转所有 left/right 物理属性
+ * 2. 镜像方向性图标 (箭头、brackets)
+ * 3. 调整 padding/margin
+ * 4. 处理 text alignment
+ * 5. 一些特殊情况 (process 步骤连接线等)
+ * =================================================================== */
+
+html[dir="rtl"] body {
+  font-family: "Noto Sans Arabic", "Inter", var(--font-body);
+}
+
+html[dir="rtl"] .mono,
+html[dir="rtl"] .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* 镜像背景网格方向（视觉上无影响，可保留） */
+html[dir="rtl"] body::before,
+html[dir="rtl"] body::after {
+  background-position: inherit;
+}
+
+/* Section 装饰 */
+html[dir="rtl"] .section-watermark {
+  inset-inline-end: auto;
+  inset-inline-start: 2rem;
+}
+
+/* Hero corners: 翻转左右 */
+html[dir="rtl"] .hero__corner--tl { left: auto; right: var(--gutter); }
+html[dir="rtl"] .hero__corner--tr { right: auto; left: var(--gutter); }
+html[dir="rtl"] .hero__corner--bl { left: auto; right: var(--gutter); }
+html[dir="rtl"] .hero__corner--br { right: auto; left: var(--gutter); }
+
+/* 翻转章节内容的方向性 (引用 quote、before/after 图标) */
+html[dir="rtl"] .brackets::before {
+  left: auto;
+  right: -2px;
+  border: 1px solid var(--color-accent);
+  border-left: 0;
+  border-bottom: 0;
+}
+html[dir="rtl"] .brackets::after {
+  right: auto;
+  left: -2px;
+  border: 1px solid var(--color-accent);
+  border-right: 0;
+  border-top: 0;
+}
+
+/* ID tag 角标 */
+html[dir="rtl"] .id-tag {
+  left: auto;
+  right: 0.5rem;
+}
+
+/* Card 标题排版 */
+html[dir="rtl"] .card__head {
+  flex-direction: row-reverse;
+}
+
+/* Nav active link 下划线 (从左到右 → 从右到左) */
+html[dir="rtl"] .nav__link::before {
+  inset-inline-start: 0.9rem;
+}
+
+/* Brand logo text dim margin */
+html[dir="rtl"] .nav__logo-text--dim {
+  margin-inline-start: 0;
+  margin-inline-end: 0.3rem;
+}
+
+/* Form select 箭头位置 (已用 inset-inline，但需调背景) */
+html[dir="rtl"] .form-select {
+  background-position: left 1rem center;
+  padding-inline-end: 1rem;
+  padding-inline-start: 2.5rem;
+}
+
+/* Process step 序号连线方向 */
+html[dir="rtl"] .process-step__num::before {
+  background: linear-gradient(270deg, var(--color-accent), transparent);
+}
+
+/* Stat 序号后缀 margin */
+html[dir="rtl"] .stat-cell__num-suffix {
+  margin-inline-start: 0;
+  margin-inline-end: 0.2em;
+}
+
+/* Cert item / Advantage item 内容方向 */
+html[dir="rtl"] .cert-item,
+html[dir="rtl"] .advantage-item,
+html[dir="rtl"] .cap-cell {
+  text-align: right;
+}
+
+/* CTA 大区块 */
+html[dir="rtl"] .cta-block {
+  text-align: center;
+}
+
+/* Equipment table right-align numeric */
+html[dir="rtl"] .equipment-table td:last-child {
+  text-align: left;
+}
+
+/* 工厂卡片 */
+html[dir="rtl"] .f-card__head {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .f-card__stats {
+  text-align: right;
+}
+
+/* Process step 序号 */
+html[dir="rtl"] .process-step__num {
+  flex-direction: row-reverse;
+}
+
+/* Section head */
+html[dir="rtl"] .section-head,
+html[dir="rtl"] .section-head--center {
+  text-align: right;
+}
+
+html[dir="rtl"] .section-head--center {
+  align-items: flex-end;
+}
+
+/* Capability grid cell */
+html[dir="rtl"] .cap-cell {
+  text-align: right;
+}
+
+html[dir="rtl"] .cap-cell__bg-num {
+  inset-inline-end: auto;
+  inset-inline-start: -0.5rem;
+}
+
+/* Global block region */
+html[dir="rtl"] .global-block__region {
+  text-align: right;
+}
+
+/* Wechat / Case card 居中 */
+html[dir="rtl"] .wechat-card,
+html[dir="rtl"] .case-card {
+  text-align: right;
+}
+
+html[dir="rtl"] .case-card__meta {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
+html[dir="rtl"] .footer-col ul {
+  text-align: right;
+}
+
+html[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+/* Filters (factories) */
+html[dir="rtl"] .filters {
+  text-align: right;
+}
+
+html[dir="rtl"] .checkbox {
+  flex-direction: row-reverse;
+}
+
+/* Factory detail */
+html[dir="rtl"] .fd-hero__back {
+  direction: ltr;
+  display: inline-flex;
+}
+
+html[dir="rtl"] .fd-stat {
+  text-align: right;
+}
+
+html[dir="rtl"] .fd-stat__unit {
+  margin-inline-start: 0;
+  margin-inline-end: 0.2em;
+}
+
+html[dir="rtl"] .fd-section__title {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .fd-section__title::before {
+  margin-inline-end: 0.6rem;
+  margin-inline-start: 0;
+}
+
+html[dir="rtl"] .case-mini {
+  text-align: right;
+}
+
+html[dir="rtl"] .contact-info {
+  text-align: right;
+}
+
+/* Mode card */
+html[dir="rtl"] .mode-card__suitable {
+  border-inline-start: 0;
+  border-inline-end: 2px solid var(--color-accent);
+}
+html[dir="rtl"] .mode-card--odm .mode-card__suitable {
+  border-inline-end-color: var(--color-cool);
+}
+html[dir="rtl"] .mode-card--cmt .mode-card__suitable {
+  border-inline-end-color: var(--color-accent-2);
+}
+
+/* Cluster card */
+html[dir="rtl"] .cluster-card {
+  text-align: right;
+}
+
+/* Contact card */
+html[dir="rtl"] .channel-card {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .channel-card__arrow {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .contact-fab__item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .contact-fab__item-arrow {
+  transform: scaleX(-1);
+}
+
+/* Page hero 居中 */
+html[dir="rtl"] .page-hero {
+  text-align: right;
+}
+
+/* Hero CTA */
+html[dir="rtl"] .hero__cta {
+  flex-direction: row-reverse;
+}
+
+/* F-card hover arrow */
+html[dir="rtl"] .f-card__cta {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .f-card__cta-arrow {
+  transform: scaleX(-1);
+}
+
+/* 阿拉伯语数字通常使用阿拉伯-印度数字 (٠١٢٣٤٥٦٧٨٩) */
+html[lang="ar"] .stat-cell__num,
+html[lang="ar"] .f-card__stat-value,
+html[lang="ar"] .advantage-item__num,
+html[lang="ar"] .cap-cell__bg-num,
+html[lang="ar"] .mono,
+html[lang="ar"] .font-mono {
+  font-feature-settings: "tnum" 1;
+}

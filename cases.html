@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="cases.hero.title" data-i18n-meta="title">客户案例 — 佛山衣主</title>
+  <meta name="description" data-i18n="cases.hero.subtitle" data-i18n-meta="description" content="">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2300e0a4'/><text x='16' y='22' text-anchor='middle' font-family='monospace' font-weight='900' font-size='14' fill='%230a0e14'>GF</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="cases">
+
+  <div data-site-header-slot></div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="reveal">
+          <div class="page-hero__eyebrow" data-i18n="cases.hero.eyebrow">// CASE STUDIES</div>
+          <h1 class="page-hero__title" data-i18n="cases.hero.title">客户合作案例</h1>
+          <p class="page-hero__subtitle" data-i18n="cases.hero.subtitle">精选 8 个跨品类、跨区域的真实合作案例</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="factory-result-bar">
+          <div class="factory-result-bar__count">
+            <strong data-cases-count>8</strong>
+            <span data-i18n="cases.filter.all">全部案例</span>
+          </div>
+        </div>
+        <div class="grid reveal-stagger" data-cases-grid>
+          <!-- 由 JS 注入 -->
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-block reveal">
+          <span class="section-tag">// YOUR TURN</span>
+          <h2 class="cta-block__title">想成为下一个案例主角？</h2>
+          <p class="cta-block__lead">提交您的需求，让我们一起打造您的下一季爆款。</p>
+          <a href="contact.html" class="btn btn--primary btn--lg btn--clip">
+            <span data-i18n="common.inquireNow">立即询盘</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer-slot></div>
+
+  <script src="assets/i18n/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    (async function () {
+      function getLang() { return (window.i18n && window.i18n.getLanguage()) || 'zh-CN'; }
+      function pick(obj) {
+        if (!obj) return '';
+        if (typeof obj === 'string') return obj;
+        const l = getLang();
+        if (obj[l] !== undefined) return obj[l];
+        const b = l.split('-')[0];
+        if (obj[b] !== undefined) return obj[b];
+        if (obj.en !== undefined) return obj.en;
+        return Object.values(obj)[0] || '';
+      }
+      function format(n) { return Number(n).toLocaleString('en-US'); }
+
+      async function load() {
+        const res = await fetch('assets/data/cases.json');
+        const data = await res.json();
+        const grid = document.querySelector('[data-cases-grid]');
+        const countEl = document.querySelector('[data-cases-count]');
+
+        grid.innerHTML = data.cases.map((c, i) => `
+<article class="case-card col-4 col-sm-6" id="${c.id}">
+  <div class="case-card__media">
+    <span class="case-card__media-num">// ${String(i + 1).padStart(2, '0')}</span>
+  </div>
+  <div class="case-card__body">
+    <div class="case-card__meta">
+      <span>${c.country}</span>
+      <span class="case-card__meta-dot"></span>
+      <span>${c.year}</span>
+      <span class="case-card__meta-dot"></span>
+      <span>${c.brand}</span>
+    </div>
+    <div class="case-card__title">${pick(c.title)}</div>
+    <div class="case-card__summary">${pick(c.summary)}</div>
+    <div class="case-card__stats">
+      <div class="case-card__stat">
+        <span class="case-card__stat-label">${window.i18n ? window.i18n.t('cases.labels.quantity') : 'Qty'}</span>
+        <span class="case-card__stat-value">${format(c.quantity)}</span>
+      </div>
+      <div class="case-card__stat">
+        <span class="case-card__stat-label">${window.i18n ? window.i18n.t('cases.labels.leadTime') : 'Lead'}</span>
+        <span class="case-card__stat-value">${c.leadTime}d</span>
+      </div>
+    </div>
+  </div>
+</article>`).join('');
+
+        countEl.textContent = data.cases.length;
+        document.dispatchEvent(new CustomEvent('i18n:applied', { detail: { lang: getLang() }}));
+      }
+      load();
+    })();
+  </script>
+</body>
+</html>

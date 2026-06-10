@@ -1,0 +1,551 @@
+{
+  "meta": {
+    "lang": "fr",
+    "dir": "ltr",
+    "name": "Français"
+  },
+  "site": {
+    "title": "Vente en Gros d'Usine de Confection — FOSHAN GarmentMaster",
+    "titleShort": "FOSHAN GarmentMaster",
+    "tagline": "Du Fil au Vêtement · 12 Usines Chinoises Auditées, Sourcing Complet",
+    "description": "Vente en gros d'usine de confection — FOSHAN GarmentMaster. 6 usines propres, services OEM/ODM/CMT."
+  },
+  "common": {
+    "loading": "Chargement…",
+    "error": "Une erreur s'est produite, réessayez",
+    "retry": "Réessayer",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "reset": "Réinitialiser",
+    "apply": "Appliquer",
+    "cancel": "Annuler",
+    "submit": "Envoyer",
+    "send": "Envoyer",
+    "next": "Suivant",
+    "back": "Retour",
+    "close": "Fermer",
+    "viewMore": "Voir Plus",
+    "viewDetail": "Voir Détails",
+    "viewAll": "Voir Tout",
+    "learnMore": "En Savoir Plus",
+    "readMore": "Lire Plus",
+    "inquireNow": "Demander Maintenant",
+    "getQuote": "Obtenir un Devis",
+    "contactUs": "Contactez-Nous",
+    "moreInfo": "Plus d'Infos",
+    "yes": "Oui",
+    "no": "Non",
+    "all": "Tous",
+    "other": "Autre",
+    "optional": "Optionnel",
+    "required": "Requis"
+  },
+  "nav": {
+    "home": "Accueil",
+    "factories": "Usines",
+    "services": "Services",
+    "cases": "Études de Cas",
+    "about": "À Propos",
+    "contact": "Contact",
+    "products": "Produits"
+  },
+  "footer": {
+    "brandDesc": "Premier hub de fabrication d'apparel en Chine. 200+ usines auditées au service des marques mondiales, de l'échantillon à l'expédition.",
+    "quickLinks": "Liens Rapides",
+    "services": "Services",
+    "factories": "Usines",
+    "industries": "Industries",
+    "resources": "Ressources",
+    "certificates": "Certifications",
+    "caseStudies": "Études de Cas",
+    "blog": "Insights",
+    "aboutUs": "À Propos",
+    "contactTitle": "Contact",
+    "address": "Tech Park, Nanshan, Shenzhen, Chine",
+    "phone": "Tél",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "wechat": "WeChat",
+    "skype": "Skype",
+    "followUs": "Suivez-Nous",
+    "copyright": "© 2026 FOSHAN GarmentMaster. Tous droits réservés.",
+    "icp": "ICP No. 00000000"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "// 01.0 / FABRICATION · SOURCING · GLOBAL",
+      "title": "Vente Directe Usine<br/><span class=\"accent\">Source & Grossiste</span>",
+      "subtitle": "Approvisionnement Direct Usine · Toutes Catégories · Qualité Premium & Prix Stable",
+      "cta1": "Démarrer une Demande",
+      "cta2": "Parcourir les Usines",
+      "scroll": "Défiler Vers le Bas"
+    },
+    "stats": {
+      "eyebrow": "// 02.0 / MÉTRIQUES CLÉS",
+      "title": "Les Chiffres Parlent",
+      "factories": "Usines Auditées",
+      "factoriesUnit": "",
+      "capacity": "Capacité Mensuelle",
+      "capacityUnit": "M pcs",
+      "countries": "Pays Desservis",
+      "countriesUnit": "+",
+      "clients": "Clients Cumulés",
+      "clientsUnit": "+"
+    },
+    "capabilities": {
+      "eyebrow": "// 03.0 / CAPACITÉS CENTRALES",
+      "title": "Quatre Capacités Essentielles",
+      "lead": "Fabrication d'apparel de bout en bout — du design à la livraison, avec des modèles de partenariat flexibles.",
+      "items": [
+        {
+          "id": "oem",
+          "title": "Fabrication OEM",
+          "desc": "Production sur échantillon, build-to-print avec contrôle qualité strict et confidentialité."
+        },
+        {
+          "id": "odm",
+          "title": "Design ODM",
+          "desc": "Équipe R&D interne. Développement de design aligné sur l'ADN de votre marque."
+        },
+        {
+          "id": "cmt",
+          "title": "Traitement CMT",
+          "desc": "Le client fournit tissu et fournitures. L'usine gère coupe, confection et finition."
+        },
+        {
+          "id": "logistics",
+          "title": "Logistique Intégrée",
+          "desc": "Expédition directe mondiale (FOB/CIF/DDP). Douanes, réservation, transfrontalier — tout géré."
+        }
+      ]
+    },
+    "featuredFactories": {
+      "eyebrow": "// 04.0 / USINES VEDETTES",
+      "title": "Partenaires de Fabrication Vedettes",
+      "lead": "200+ usines auditées dans cinq clusters industriels de Foshan. Adaptées à votre prochaine saison.",
+      "viewAll": "Voir les 12 Usines"
+    },
+    "process": {
+      "eyebrow": "// 05.0 / NOTRE APPROCHE",
+      "title": "Processus de Livraison en Six Étapes",
+      "lead": "Un workflow standardisé de la demande à l'expédition. Chaque étape est traçable.",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Demande",
+          "desc": "Envoyez RFQ · Catégorie / Qté / Délai"
+        },
+        {
+          "num": "02",
+          "title": "Mise en Relation",
+          "desc": "3 recommandations d'usines en 24h"
+        },
+        {
+          "num": "03",
+          "title": "Échantillon",
+          "desc": "7-10 jours d'échantillonnage · Livré"
+        },
+        {
+          "num": "04",
+          "title": "Devis & Contrat",
+          "desc": "Tarification transparente · Contrat formel"
+        },
+        {
+          "num": "05",
+          "title": "Production",
+          "desc": "QC en ligne · Mises à jour en temps réel"
+        },
+        {
+          "num": "06",
+          "title": "Expédition",
+          "desc": "Gestion logistique · Service après-vente"
+        }
+      ]
+    },
+    "global": {
+      "eyebrow": "// 06.0 / PORTÉE MONDIALE",
+      "title": "Au Service de 30+ Pays et Régions",
+      "lead": "De l'Amérique du Nord à l'Amérique du Sud, de l'Europe au Moyen-Orient, de la Russie à l'Afrique — FOSHAN GarmentMaster fournit des solutions de fabrication d'apparel dans le monde entier."
+    },
+    "cases": {
+      "eyebrow": "// 07.0 / ÉTUDES DE CAS",
+      "title": "Études de Cas Récentes",
+      "lead": "Histoires de succès cross-category sélectionnées de 30+ pays.",
+      "viewAll": "Voir Toutes les Études"
+    },
+    "certifications": {
+      "eyebrow": "// 08.0 / CERTIFICATIONS",
+      "title": "Certifications Internationales",
+      "lead": "Toutes les usines partenaires détiennent au moins 2 certifications internationales. Numéros disponibles sur demande."
+    },
+    "cta": {
+      "eyebrow": "// 09.0 / COMMENCEZ VOTRE SAISON",
+      "title": "Votre Prochain Best-Seller<br/>Commence Ici",
+      "lead": "Envoyez votre demande. Recevez 3 devis d'usines adaptées en 24 heures.",
+      "btn": "Démarrer une Demande"
+    }
+  },
+  "factories": {
+    "hero": {
+      "eyebrow": "// USINES / VUE D'ENSEMBLE",
+      "title": "12 Partenaires de Fabrication",
+      "subtitle": "Couvrant maille, tissé, denim, vêtements d'extérieur, enfants, sport, maillots, soie, tenues de travail, laine, maison, mode — les 12 catégories"
+    },
+    "filters": {
+      "title": "Filtres",
+      "category": "Catégorie",
+      "region": "Région",
+      "moq": "MOQ",
+      "capacity": "Capacité",
+      "certification": "Certification",
+      "result": "{n} usines trouvées",
+      "resultEmpty": "Aucune usine correspondante",
+      "sort": "Trier",
+      "sortBy": {
+        "capacity": "Capacité",
+        "established": "Année",
+        "name": "Nom",
+        "moq": "MOQ"
+      },
+      "order": {
+        "desc": "Desc",
+        "asc": "Asc"
+      }
+    },
+    "card": {
+      "category": "Catégorie",
+      "established": "Fondée",
+      "moq": "MOQ",
+      "capacity": "Capacité",
+      "leadTime": "Délai",
+      "viewDetail": "Voir Détails"
+    },
+    "empty": {
+      "title": "Aucune usine correspondante",
+      "desc": "Essayez d'ajuster les filtres ou contactez-nous pour une recommandation personnalisée.",
+      "cta": "Contactez-Nous"
+    }
+  },
+  "factoryDetail": {
+    "notFound": "Usine non trouvée",
+    "back": "← Retour aux usines",
+    "overview": "Aperçu",
+    "specialties": "Spécialités",
+    "equipment": "Équipement",
+    "certifications": "Certifications",
+    "cases": "Cas Passés",
+    "contact": "Contact",
+    "stats": {
+      "established": "Fondée",
+      "factoryArea": "Surface Usine",
+      "employees": "Employés",
+      "monthlyCapacity": "Capacité Mensuelle",
+      "moq": "MOQ",
+      "leadTime": "Délai Standard"
+    },
+    "equipmentLabels": {
+      "sewingMachines": "Machines à Coudre",
+      "cuttingLines": "Lignes de Coupe",
+      "embroideryMachines": "Machines à Broder",
+      "printingLines": "Lignes d'Impression"
+    },
+    "caseFields": {
+      "brand": "Marque",
+      "country": "Pays",
+      "year": "Année",
+      "product": "Produit",
+      "quantity": "Qté"
+    },
+    "actions": {
+      "inquire": "Demander",
+      "download": "Télécharger Profil",
+      "share": "Partager"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "// SERVICES / VUE D'ENSEMBLE",
+      "title": "Trois Modèles de Fabrication",
+      "subtitle": "OEM / ODM / CMT — choisissez le partenariat qui correspond le mieux à votre marque"
+    },
+    "modes": {
+      "oem": {
+        "title": "Fabrication OEM",
+        "tagline": "Original Equipment Manufacturing",
+        "lead": "Vous fournissez le tech-pack, l'échantillon ou le tissu. Nous reproduisons avec précision et rapidité.",
+        "suitable": "Idéal pour les marques avec des équipes de design internes, cherchant à mettre à l'échelle la production de manière rentable.",
+        "process": [
+          "Confirmer Spec",
+          "Échantillonnage",
+          "Tech Pack",
+          "Production",
+          "QC",
+          "Expédition"
+        ],
+        "moq": "MOQ recommandé 300+ pcs/style",
+        "leadTime": "Échantillon 7-10j / Production 25-35j"
+      },
+      "odm": {
+        "title": "Design ODM",
+        "tagline": "Original Design Manufacturing",
+        "lead": "Notre équipe R&D conçoit en fonction de l'ADN de votre marque et des tendances actuelles.",
+        "suitable": "Idéal pour les startups, marques e-commerce et acheteurs sans équipes de design dédiées.",
+        "process": [
+          "Brief",
+          "Tendances",
+          "Design",
+          "Échantillonnage",
+          "Approbation",
+          "Production"
+        ],
+        "moq": "MOQ recommandé 200+ pcs/style",
+        "leadTime": "Design 14-21j / Échantillon 21-30j / Production 35-45j"
+      },
+      "cmt": {
+        "title": "Traitement CMT",
+        "tagline": "Coupe, Confection, Finition",
+        "lead": "Vous fournissez tissu et fournitures. Nous gérons coupe, couture, finition — fabrication pure.",
+        "suitable": "Idéal pour clients avec sourcing stable, besoins d'expansion ou exigences de processus spéciaux.",
+        "process": [
+          "Réception",
+          "Test Labo",
+          "Coupe & Plan",
+          "Couture",
+          "Finition",
+          "QC"
+        ],
+        "moq": "MOQ recommandé 500+ pcs/style",
+        "leadTime": "Production 30-40 jours"
+      }
+    },
+    "advantages": {
+      "eyebrow": "// POURQUOI NOUS",
+      "title": "Pourquoi Choisir FOSHAN GarmentMaster",
+      "items": [
+        {
+          "title": "12 Usines",
+          "desc": "Pool d'usines complet, précisément adapté à vos besoins"
+        },
+        {
+          "title": "Matching 24h",
+          "desc": "3 meilleures recommandations d'usines en 24 heures"
+        },
+        {
+          "title": "Livraison 35 Jours",
+          "desc": "Cycle leader de l'industrie de l'échantillon à la production"
+        },
+        {
+          "title": "QC Complet",
+          "desc": "Standard AQL 2.5, équipe QC sur site"
+        }
+      ]
+    }
+  },
+  "cases": {
+    "hero": {
+      "eyebrow": "// ÉTUDES DE CAS",
+      "title": "Études de Cas Sélectionnées",
+      "subtitle": "8 histoires de succès cross-category et cross-region"
+    },
+    "filter": {
+      "all": "Tous les Cas",
+      "category": "Catégorie",
+      "year": "Année"
+    },
+    "labels": {
+      "quantity": "Quantité",
+      "leadTime": "Délai",
+      "category": "Catégorie"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "// À PROPOS",
+      "title": "Relier la Fabrication Chinoise<br/>aux Marques Globales",
+      "lead": "Basé à Shenzhen, FOSHAN GarmentMaster est un hub de sourcing de fabrication d'apparel unique pour les clients internationaux. Nous avons agrégé 200+ usines auditées dans six grands clusters textiles chinois, offrant les modèles OEM / ODM / CMT."
+    },
+    "mission": {
+      "eyebrow": "// NOTRE MISSION",
+      "title": "Notre Mission",
+      "lead": "Repenser le sourcing mondial d'apparel depuis la Chine — avec des standards industriels, une efficacité d'usine, et une expérience numérique moderne."
+    },
+    "values": {
+      "eyebrow": "// NOS VALEURS",
+      "title": "Valeurs Fondamentales",
+      "items": [
+        {
+          "title": "Transparence",
+          "desc": "Tarification transparente, progrès transparent, frais transparents"
+        },
+        {
+          "title": "Professionnel",
+          "desc": "20+ ans d'expérience, service client mondial profond"
+        },
+        {
+          "title": "Agile",
+          "desc": "Matching d'usine en 24h, livraison en 35 jours"
+        },
+        {
+          "title": "Gagnant-Gagnant",
+          "desc": "Vision long terme, croissance avec nos clients"
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "// NOTRE ÉQUIPE",
+      "title": "L'Équipe",
+      "lead": "Une équipe de vétérans du commerce d'apparel avec 20+ ans d'expérience et d'experts produits numériques — combinant profondeur industrielle et expérience utilisateur."
+    },
+    "geo": {
+      "eyebrow": "// COUVERTURE GÉOGRAPHIQUE",
+      "title": "Couverture Complète des Clusters Textiles Chinois",
+      "lead": "200+ usines partenaires dans 5 clusters de Foshan. De la matière première au produit fini — en 200 km.",
+      "clusters": [
+        {
+          "name": "Guangdong",
+          "tags": [
+            "Maille",
+            "Denim",
+            "Sport"
+          ]
+        },
+        {
+          "name": "Zhejiang",
+          "tags": [
+            "Tissé",
+            "Enfants"
+          ]
+        },
+        {
+          "name": "Jiangsu",
+          "tags": [
+            "Soie",
+            "Maison"
+          ]
+        },
+        {
+          "name": "Shanghai",
+          "tags": [
+            "Designer"
+          ]
+        },
+        {
+          "name": "Hebei",
+          "tags": [
+            "Duvet"
+          ]
+        },
+        {
+          "name": "Shandong",
+          "tags": [
+            "Travail"
+          ]
+        },
+        {
+          "name": "Fujian",
+          "tags": [
+            "Bain"
+          ]
+        },
+        {
+          "name": "Mongolie-Intérieure",
+          "tags": [
+            "Cachemire"
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "// CONTACT",
+      "title": "Contactez FOSHAN GarmentMaster",
+      "lead": "Remplissez le formulaire ou contactez-nous via WhatsApp / WeChat. Réponse sous 24 heures."
+    },
+    "form": {
+      "title": "Envoyer une Demande",
+      "lead": "Complétez le formulaire pour des devis plus rapides. Champs obligatoires marqués *.",
+      "name": "Votre Nom",
+      "company": "Entreprise",
+      "country": "Pays / Région",
+      "email": "Email",
+      "phone": "Téléphone",
+      "whatsapp": "WhatsApp",
+      "inquiryType": "Type de Demande",
+      "inquiryTypes": {
+        "oem": "Fabrication OEM",
+        "odm": "Design ODM",
+        "cmt": "Traitement CMT",
+        "other": "Autre"
+      },
+      "categories": "Catégories Cibles",
+      "quantity": "Quantité Estimée",
+      "quantityUnit": "pcs",
+      "leadTime": "Délai Attendu",
+      "message": "Exigences Détaillées",
+      "attachment": "Pièce jointe (optionnel)",
+      "submit": "Envoyer la Demande",
+      "submitting": "Envoi en cours…",
+      "success": {
+        "title": "Demande Reçue ✓",
+        "lead": "Merci pour votre confiance ! Notre gestionnaire de compte vous contactera dans les 24 heures.",
+        "back": "Retour à l'Accueil"
+      }
+    },
+    "channels": {
+      "title": "Autres Canaux",
+      "lead": "Contactez-nous via n'importe lequel de ces canaux — directement avec une vraie personne.",
+      "whatsapp": "WhatsApp Business",
+      "wechat": "WeChat",
+      "wechatHint": "Scannez QR pour ajouter WeChat",
+      "email": "Email Professionnel",
+      "phone": "Téléphone",
+      "skype": "Skype",
+      "address": "Adresse du Bureau"
+    },
+    "validation": {
+      "required": "Ce champ est requis",
+      "email": "Veuillez entrer un email valide",
+      "phone": "Veuillez entrer un téléphone valide",
+      "agree": "Veuillez accepter nos conditions"
+    }
+  },
+  "commonForm": {
+    "language": "Langue",
+    "languageOptions": {
+      "zh-CN": "简体中文",
+      "en": "English",
+      "es": "Español",
+      "ru": "Русский",
+      "ar": "العربية",
+      "fr": "Français"
+    }
+  },
+  "error404": {
+    "title": "404",
+    "lead": "Page Non Trouvée",
+    "desc": "Désolé, la page que vous cherchez n'existe pas ou a été déplacée.",
+    "back": "Retour à l'Accueil"
+  },
+  "products": {
+    "hero": {
+      "eyebrow": "// 10.0 / ÉCHANTILLONS",
+      "title": "Échantillons de Produits",
+      "subtitle": "Ligne enfant FOSHAN GarmentMaster — tous les styles supportent la personnalisation OEM/ODM."
+    },
+    "card": {
+      "category": "Catégorie",
+      "size": "Taille",
+      "fabric": "Tissu",
+      "moq": "MOQ",
+      "leadTime": "Délai Échantillon",
+      "code": "Réf.",
+      "inquire": "Demander"
+    },
+    "cta": {
+      "title": "Besoin de Plus de Styles?",
+      "lead": "Nous reproduisons tout design, échantillon ou tech pack 1:1 pour votre marque.",
+      "btn": "Contact OEM"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="contact.hero.title" data-i18n-meta="title">联系我们 — 佛山衣主</title>
+  <meta name="description" data-i18n="contact.hero.lead" data-i18n-meta="description" content="">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2300e0a4'/><text x='16' y='22' text-anchor='middle' font-family='monospace' font-weight='900' font-size='14' fill='%230a0e14'>GF</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="contact">
+
+  <div data-site-header-slot></div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="reveal">
+          <div class="page-hero__eyebrow" data-i18n="contact.hero.eyebrow">// CONTACT US</div>
+          <h1 class="page-hero__title" data-i18n="contact.hero.title">联系佛山衣主</h1>
+          <p class="page-hero__subtitle" data-i18n="contact.hero.lead">提交下方表单或直接通过 WhatsApp/微信联系我们，24 小时内回复。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: Form -->
+          <div>
+            <div class="form-card reveal" data-form-card>
+              <h2 class="form-card__title" data-i18n="contact.form.title">提交询盘</h2>
+              <p class="form-card__lead" data-i18n="contact.form.lead">完整填写可加快报价速度，关键信息以 * 标注。</p>
+
+              <!-- Netlify Forms 集成: 加 netlify + form-name -->
+              <form class="form" name="inquiry" method="POST" data-netlify="true" data-form-success="false" netlify-honeypot="bot-field" enctype="multipart/form-data">
+
+                <input type="hidden" name="form-name" value="inquiry">
+                <p hidden>
+                  <label>Don't fill: <input name="bot-field"></label>
+                </p>
+
+                <div class="form-row form-row--2">
+                  <div class="form-field">
+                    <label class="form-label" for="f-name">
+                      <span data-i18n="contact.form.name">您的姓名</span>
+                      <span class="req">*</span>
+                    </label>
+                    <input id="f-name" name="name" type="text" class="form-input" required autocomplete="name">
+                    <div class="form-error" data-i18n="contact.validation.required">此项必填</div>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="f-company">
+                      <span data-i18n="contact.form.company">公司名称</span>
+                    </label>
+                    <input id="f-company" name="company" type="text" class="form-input" autocomplete="organization">
+                  </div>
+                </div>
+
+                <div class="form-row form-row--2">
+                  <div class="form-field">
+                    <label class="form-label" for="f-country">
+                      <span data-i18n="contact.form.country">国家/地区</span>
+                      <span class="req">*</span>
+                    </label>
+                    <input id="f-country" name="country" type="text" class="form-input" required>
+                    <div class="form-error" data-i18n="contact.validation.required">此项必填</div>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="f-email">
+                      <span data-i18n="contact.form.email">邮箱</span>
+                      <span class="req">*</span>
+                    </label>
+                    <input id="f-email" name="email" type="email" class="form-input" required autocomplete="email">
+                    <div class="form-error" data-i18n="contact.validation.email">请输入有效邮箱地址</div>
+                  </div>
+                </div>
+
+                <div class="form-row form-row--2">
+                  <div class="form-field">
+                    <label class="form-label" for="f-phone">
+                      <span data-i18n="contact.form.phone">电话</span>
+                    </label>
+                    <input id="f-phone" name="phone" type="tel" class="form-input" autocomplete="tel">
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="f-whatsapp">
+                      <span data-i18n="contact.form.whatsapp">WhatsApp</span>
+                    </label>
+                    <input id="f-whatsapp" name="whatsapp" type="tel" class="form-input" placeholder="+86 138 0000 0000">
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="f-type">
+                    <span data-i18n="contact.form.inquiryType">询盘类型</span>
+                    <span class="req">*</span>
+                  </label>
+                  <select id="f-type" name="inquiryType" class="form-select" required>
+                    <option value="oem" data-i18n="contact.form.inquiryTypes.oem">OEM 代工</option>
+                    <option value="odm" data-i18n="contact.form.inquiryTypes.odm">ODM 设计</option>
+                    <option value="cmt" data-i18n="contact.form.inquiryTypes.cmt">CMT 来料</option>
+                    <option value="other" data-i18n="contact.form.inquiryTypes.other">其他</option>
+                  </select>
+                </div>
+
+                <div class="form-row form-row--2">
+                  <div class="form-field">
+                    <label class="form-label" for="f-cats">
+                      <span data-i18n="contact.form.categories">目标品类</span>
+                    </label>
+                    <select id="f-cats" name="categories" class="form-select">
+                      <option value="" data-i18n="common.all">全部</option>
+                      <option value="knit">Knit / 针织</option>
+                      <option value="woven">Woven / 梭织</option>
+                      <option value="denim">Denim / 牛仔</option>
+                      <option value="outerwear">Outerwear / 外套</option>
+                      <option value="kids">Kidswear / 童装</option>
+                      <option value="sport">Sportswear / 运动</option>
+                      <option value="swim">Swimwear / 泳装</option>
+                      <option value="silk">Silk / 丝绸</option>
+                      <option value="workwear">Workwear / 工装</option>
+                      <option value="wool">Wool / 羊毛</option>
+                      <option value="home">Homewear / 家居</option>
+                      <option value="fashion">Fashion / 时装</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="f-qty">
+                      <span data-i18n="contact.form.quantity">预估数量</span>
+                    </label>
+                    <input id="f-qty" name="quantity" type="number" class="form-input" min="0" placeholder="1000">
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="f-leadtime">
+                    <span data-i18n="contact.form.leadTime">期望交期</span>
+                  </label>
+                  <input id="f-leadtime" name="leadTime" type="text" class="form-input" placeholder="e.g. 35 days / 2026-08-15">
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="f-message">
+                    <span data-i18n="contact.form.message">详细需求</span>
+                    <span class="req">*</span>
+                  </label>
+                  <textarea id="f-message" name="message" class="form-textarea" required placeholder="..."></textarea>
+                  <div class="form-error" data-i18n="contact.validation.required">此项必填</div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="f-att">
+                    <span data-i18n="contact.form.attachment">附件 (选填)</span>
+                  </label>
+                  <input id="f-att" name="attachment" type="file" class="form-input" multiple accept=".pdf,.jpg,.jpeg,.png,.ai,.psd,.zip">
+                  <div class="form-help">PDF / JPG / PNG / AI / PSD / ZIP (Max 10MB each)</div>
+                </div>
+
+                <div class="flex items-center gap-3" style="margin-block-start: 0.5rem;">
+                  <button type="submit" class="btn btn--primary btn--lg btn--clip" data-form-submit>
+                    <span data-i18n="contact.form.submit">提交询盘</span>
+                    <span class="arrow">→</span>
+                  </button>
+                  <span class="muted text-xs" data-form-status></span>
+                </div>
+              </form>
+            </div>
+
+            <!-- Success card (initially hidden) -->
+            <div class="form-card reveal" data-form-success-card hidden style="text-align: center; padding: 4rem 2rem;">
+              <div style="font-size: 4rem; color: var(--color-accent); margin-block-end: 1rem;">✓</div>
+              <h2 class="form-card__title" data-i18n="contact.form.success.title">询盘已提交 ✓</h2>
+              <p class="form-card__lead" data-i18n="contact.form.success.lead">感谢您的信任！我们的招商经理将在 24 小时内与您联系。</p>
+              <a href="index.html" class="btn btn--primary mt-4">
+                <span data-i18n="contact.form.success.back">返回首页</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Channels -->
+          <aside class="reveal" data-channels-card>
+            <h2 class="fd-section__title" data-i18n="contact.channels.title">其他联系方式</h2>
+            <p class="muted text-sm mb-4" data-i18n="contact.channels.lead">通过以下任何方式都能直接联系到我们。</p>
+
+            <a class="channel-card channel-card--wa" href="https://wa.me/8613800000000?text=Hello%20FOSHAN GarmentMaster" target="_blank" rel="noopener">
+              <div class="channel-card__icon" data-svg="whatsapp"></div>
+              <div class="channel-card__text">
+                <div class="channel-card__title" data-i18n="contact.channels.whatsapp">WhatsApp 业务</div>
+                <div class="channel-card__value">+86 138 0000 0000</div>
+              </div>
+              <div class="channel-card__arrow">→</div>
+            </a>
+
+            <a class="channel-card" href="mailto:hello@garmentforge.com">
+              <div class="channel-card__icon" data-svg="mail"></div>
+              <div class="channel-card__text">
+                <div class="channel-card__title" data-i18n="contact.channels.email">商务邮箱</div>
+                <div class="channel-card__value">hello@garmentforge.com</div>
+              </div>
+              <div class="channel-card__arrow">→</div>
+            </a>
+
+            <a class="channel-card" href="tel:+8675588880000">
+              <div class="channel-card__icon" data-svg="phone"></div>
+              <div class="channel-card__text">
+                <div class="channel-card__title" data-i18n="contact.channels.phone">电话热线</div>
+                <div class="channel-card__value">+86 755 8888 0000</div>
+              </div>
+              <div class="channel-card__arrow">→</div>
+            </a>
+
+            <a class="channel-card" href="#" data-skype-link>
+              <div class="channel-card__icon" data-svg="skype"></div>
+              <div class="channel-card__text">
+                <div class="channel-card__title" data-i18n="contact.channels.skype">Skype</div>
+                <div class="channel-card__value">garmentforge.biz</div>
+              </div>
+              <div class="channel-card__arrow">→</div>
+            </a>
+
+            <div class="wechat-card">
+              <div class="wechat-card__qr">
+                <span class="wechat-card__qr-placeholder" data-i18n="contact.channels.wechatHint">扫码添加商务微信</span>
+              </div>
+              <div class="wechat-card__label" data-i18n="contact.channels.wechat">WeChat: garmentforge</div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer-slot></div>
+
+  <script src="assets/i18n/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/form.js" defer></script>
+  <script>
+    // 注入 skype 图标
+    (function() {
+      function injectSkype() {
+        const el = document.querySelector('[data-svg="skype"]');
+        if (!el || el.innerHTML.trim()) return;
+        el.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.069 18.315c3.589-.172 5.83-1.95 5.83-4.376 0-2.42-1.74-3.55-5.36-4.50-2.7-.74-3.7-1.36-3.7-2.46 0-1.10.96-1.83 2.55-1.83 1.50 0 2.50.61 2.83 1.74.21.69.45.86 1.06.86.62 0 1.02-.4 1.02-1.04 0-.27-.04-.46-.13-.75-.6-1.86-2.34-2.95-4.78-2.95-2.84 0-4.85 1.69-4.85 4.10 0 2.45 1.86 3.65 5.36 4.55 2.66.69 3.59 1.32 3.59 2.39 0 1.18-1.05 1.97-2.69 1.97-1.85 0-3.04-.79-3.39-2.27-.15-.62-.39-.83-1-.83-.62 0-1.04.43-1.04 1.05 0 .27.04.51.13.81.66 2.21 2.71 3.42 5.65 3.42zm-.07 3.685c-5.34 0-9.69-4.35-9.69-9.69 0-1.55.37-3.06 1.07-4.45C1.85 5.45.66 2.85.66 0H7.5c0 2.85 1.19 5.45 3.31 7.4-1.45 1.84-2.31 4.13-2.31 6.55 0 5.34 4.35 9.69 9.69 9.69 1.55 0 3.06-.37 4.45-1.07 1.39 2.14 4 3.33 6.85 3.33V22c-2.85 0-5.45-1.19-7.4-3.31-1.84 1.45-4.13 2.31-6.55 2.31z"/></svg>';
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', injectSkype);
+      } else {
+        injectSkype();
+      }
+    })();
+  </script>
+</body>
+</html>

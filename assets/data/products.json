@@ -1,0 +1,161 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "updatedAt": "2026-06-10",
+    "description": "FOSHAN GarmentMaster 产品图库 — 8 款童装样衣展示"
+  },
+  "products": [
+    {
+      "id": "prod-001",
+      "code": "FG-K-101",
+      "name": {
+        "zh": "童趣米奇印花短袖 T 恤",
+        "en": "Kids Mickey Graphic Tee — White",
+        "es": "Camiseta Infantil Gráfica Mickey — Blanca",
+        "ru": "Детская футболка с Микки — Белая",
+        "ar": "تيشيرت أطفال بنقش ميكي - أبيض",
+        "fr": "T-shirt Enfant Graphique Mickey — Blanc"
+      },
+      "category": "kids",
+      "color": { "zh": "白色", "en": "White", "es": "Blanco", "ru": "Белый", "ar": "أبيض", "fr": "Blanc" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-tshirt-mickey-white.jpg"
+    },
+    {
+      "id": "prod-002",
+      "code": "FG-K-102",
+      "name": {
+        "zh": "童趣字母印花短袖 T 恤",
+        "en": "Kids Letter M. Graphic Tee — White",
+        "es": "Camiseta Infantil Letra M. — Blanca",
+        "ru": "Детская футболка с буквой M. — Белая",
+        "ar": "تيشيرت أطفال بحرف M. - أبيض",
+        "fr": "T-shirt Enfant Lettre M. — Blanc"
+      },
+      "category": "kids",
+      "color": { "zh": "白色", "en": "White", "es": "Blanco", "ru": "Белый", "ar": "أبيض", "fr": "Blanc" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-tshirt-letter-white.jpg"
+    },
+    {
+      "id": "prod-003",
+      "code": "FG-K-103",
+      "name": {
+        "zh": "童趣滑板狗印花 T 恤",
+        "en": "Kids Skateboard Dog Graphic Tee — Maroon",
+        "es": "Camiseta Infantil Perro Skate — Burdeos",
+        "ru": "Детская футболка Собака-скейтер — Бордо",
+        "ar": "تيشيرت أطفال كلب تزلج - عنابي",
+        "fr": "T-shirt Enfant Chien Skate — Bordeaux"
+      },
+      "category": "kids",
+      "color": { "zh": "酒红", "en": "Maroon", "es": "Burdeos", "ru": "Бордо", "ar": "عنابي", "fr": "Bordeaux" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-tshirt-dog-skate-maroon.jpg"
+    },
+    {
+      "id": "prod-004",
+      "code": "FG-K-104",
+      "name": {
+        "zh": "童趣米奇印花 T 恤 (黄)",
+        "en": "Kids Mickey Graphic Tee — Yellow",
+        "es": "Camiseta Infantil Mickey — Amarilla",
+        "ru": "Детская футболка с Микки — Жёлтая",
+        "ar": "تيشيرت أطفال بنقش ميكي - أصفر",
+        "fr": "T-shirt Enfant Mickey — Jaune"
+      },
+      "category": "kids",
+      "color": { "zh": "黄色", "en": "Yellow", "es": "Amarillo", "ru": "Жёлтый", "ar": "أصفر", "fr": "Jaune" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-tshirt-mickey-yellow.jpg"
+    },
+    {
+      "id": "prod-005",
+      "code": "FG-K-105",
+      "name": {
+        "zh": "童趣假期印花 T 恤 (黑)",
+        "en": "Kids Holiday Graphic Tee — Black",
+        "es": "Camiseta Infantil Vacaciones — Negra",
+        "ru": "Детская футболка Каникулы — Чёрная",
+        "ar": "تيشيرت أطفال إجازة - أسود",
+        "fr": "T-shirt Enfant Vacances — Noir"
+      },
+      "category": "kids",
+      "color": { "zh": "黑色", "en": "Black", "es": "Negro", "ru": "Чёрный", "ar": "أسود", "fr": "Noir" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-tshirt-holiday-black.jpg"
+    },
+    {
+      "id": "prod-006",
+      "code": "FG-K-106",
+      "name": {
+        "zh": "童趣喵咪印花 T 恤 (黄)",
+        "en": "Kids Cat Graphic Tee — Yellow",
+        "es": "Camiseta Infantil Gato — Amarilla",
+        "ru": "Детская футболка Кот — Жёлтая",
+        "ar": "تيشيرت أطفال قطة - أصفر",
+        "fr": "T-shirt Enfant Chat — Jaune"
+      },
+      "category": "kids",
+      "color": { "zh": "黄色", "en": "Yellow", "es": "Amarillo", "ru": "Жёлтый", "ar": "أصفر", "fr": "Jaune" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-tshirt-cat-yellow.jpg"
+    },
+    {
+      "id": "prod-007",
+      "code": "FG-K-107",
+      "name": {
+        "zh": "童趣假期印花 T 恤 (白)",
+        "en": "Kids Holiday Graphic Tee — White",
+        "es": "Camiseta Infantil Vacaciones — Blanca",
+        "ru": "Детская футболка Каникулы — Белая",
+        "ar": "تيشيرت أطفال إجازة - أبيض",
+        "fr": "T-shirt Enfant Vacances — Blanc"
+      },
+      "category": "kids",
+      "color": { "zh": "白色", "en": "White", "es": "Blanco", "ru": "Белый", "ar": "أبيض", "fr": "Blanc" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-tshirt-holiday-white.jpg"
+    },
+    {
+      "id": "prod-008",
+      "code": "FG-K-108",
+      "name": {
+        "zh": "童趣长袖 T 恤 (黑)",
+        "en": "Kids Long-Sleeve Tee — Black",
+        "es": "Camiseta Infantil Manga Larga — Negra",
+        "ru": "Детская футболка с длинным рукавом — Чёрная",
+        "ar": "تيشيرت أطفال بأكمام طويلة - أسود",
+        "fr": "T-shirt Enfant Manches Longues — Noir"
+      },
+      "category": "kids",
+      "color": { "zh": "黑色", "en": "Black", "es": "Negro", "ru": "Чёрный", "ar": "أسود", "fr": "Noir" },
+      "size": "80-140",
+      "fabric": "100% 棉 / Cotton",
+      "moq": 200,
+      "leadTime": 25,
+      "image": "kids-long-sleeve-black.jpg"
+    }
+  ]
+}

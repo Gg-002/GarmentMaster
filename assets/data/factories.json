@@ -1,0 +1,1707 @@
+{
+  "_meta": {
+    "version": "1.2.0",
+    "updatedAt": "2026-06-10",
+    "description": "FOSHAN GarmentMaster 工厂网络数据库 — 12 家工厂全部位于佛山五大产业区（禅城/南海/顺德/三水/高明）",
+    "imageBase": "assets/images/factories",
+    "company": {
+      "name": "FOSHAN GarmentMaster",
+      "nameZh": "佛山衣主",
+      "address": "Foshan, Guangdong, China",
+      "addressZh": "中国广东省佛山市",
+      "email": "info@foshan-garmentmaster.com",
+      "phone": "+86-757-8888-0000"
+    }
+  },
+  "categories": [
+    {
+      "id": "knit",
+      "zh": "针织",
+      "en": "Knitwear",
+      "es": "Tejido de punto",
+      "ru": "Трикотаж",
+      "ar": "تريكو",
+      "fr": "Tricot"
+    },
+    {
+      "id": "woven",
+      "zh": "梭织",
+      "en": "Woven",
+      "es": "Tejido plano",
+      "ru": "Тканый",
+      "ar": "منسوج",
+      "fr": "Tissé"
+    },
+    {
+      "id": "denim",
+      "zh": "牛仔",
+      "en": "Denim",
+      "es": "Mezclilla",
+      "ru": "Джинсовая",
+      "ar": "دنيم",
+      "fr": "Denim"
+    },
+    {
+      "id": "outerwear",
+      "zh": "外套/羽绒",
+      "en": "Outerwear",
+      "es": "Abrigos",
+      "ru": "Верхняя одежда",
+      "ar": "معاطف",
+      "fr": "Vêtements d'extérieur"
+    },
+    {
+      "id": "kids",
+      "zh": "童装",
+      "en": "Kidswear",
+      "es": "Ropa infantil",
+      "ru": "Детская одежда",
+      "ar": "ملابس أطفال",
+      "fr": "Mode enfant"
+    },
+    {
+      "id": "sport",
+      "zh": "运动瑜伽",
+      "en": "Sportswear",
+      "es": "Ropa deportiva",
+      "ru": "Спортивная",
+      "ar": "ملابس رياضية",
+      "fr": "Sport"
+    },
+    {
+      "id": "swim",
+      "zh": "泳装",
+      "en": "Swimwear",
+      "es": "Traje de baño",
+      "ru": "Купальники",
+      "ar": "ملابس سباحة",
+      "fr": "Maillots de bain"
+    },
+    {
+      "id": "silk",
+      "zh": "丝绸礼服",
+      "en": "Silk / Formal",
+      "es": "Seda / Formal",
+      "ru": "Шёлк / Вечернее",
+      "ar": "حرير",
+      "fr": "Soie / Formel"
+    },
+    {
+      "id": "workwear",
+      "zh": "工装制服",
+      "en": "Workwear",
+      "es": "Ropa de trabajo",
+      "ru": "Спецодежда",
+      "ar": "ملابس عمل",
+      "fr": "Tenues de travail"
+    },
+    {
+      "id": "wool",
+      "zh": "羊毛羊绒",
+      "en": "Wool / Cashmere",
+      "es": "Lana / Cachemir",
+      "ru": "Шерсть / Кашемир",
+      "ar": "صوف",
+      "fr": "Laine / Cachemire"
+    },
+    {
+      "id": "home",
+      "zh": "家居睡衣",
+      "en": "Home / Sleepwear",
+      "es": "Hogar / Pijamas",
+      "ru": "Домашняя / Пижамы",
+      "ar": "ملابس منزلية",
+      "fr": "Maison / Pyjama"
+    },
+    {
+      "id": "fashion",
+      "zh": "时尚女装",
+      "en": "Fashion Womens",
+      "es": "Moda Mujer",
+      "ru": "Женская мода",
+      "ar": "أزياء نسائية",
+      "fr": "Mode Femme"
+    }
+  ],
+  "regions": [
+    {
+      "id": "foshan",
+      "zh": "佛山",
+      "en": "Foshan",
+      "es": "Foshan",
+      "ru": "Фошань",
+      "ar": "فوشان",
+      "fr": "Foshan"
+    },
+    {
+      "id": "guangdong",
+      "zh": "广东",
+      "en": "Guangdong",
+      "es": "Guangdong",
+      "ru": "Гуандун",
+      "ar": "قوانغدونغ",
+      "fr": "Guangdong"
+    },
+    {
+      "id": "zhejiang",
+      "zh": "浙江",
+      "en": "Zhejiang",
+      "es": "Zhejiang",
+      "ru": "Чжэцзян",
+      "ar": "تشجيانغ",
+      "fr": "Zhejiang"
+    },
+    {
+      "id": "jiangsu",
+      "zh": "江苏",
+      "en": "Jiangsu",
+      "es": "Jiangsu",
+      "ru": "Цзянсу",
+      "ar": "جيانغسو",
+      "fr": "Jiangsu"
+    },
+    {
+      "id": "shanghai",
+      "zh": "上海",
+      "en": "Shanghai",
+      "es": "Shanghái",
+      "ru": "Шанхай",
+      "ar": "شانغهاي",
+      "fr": "Shanghai"
+    },
+    {
+      "id": "hebei",
+      "zh": "河北",
+      "en": "Hebei",
+      "es": "Hebei",
+      "ru": "Хэбэй",
+      "ar": "خبي",
+      "fr": "Hebei"
+    },
+    {
+      "id": "shandong",
+      "zh": "山东",
+      "en": "Shandong",
+      "es": "Shandong",
+      "ru": "Шаньдун",
+      "ar": "شاندونغ",
+      "fr": "Shandong"
+    },
+    {
+      "id": "fujian",
+      "zh": "福建",
+      "en": "Fujian",
+      "es": "Fujian",
+      "ru": "Фуцзянь",
+      "ar": "فوجيان",
+      "fr": "Fujian"
+    },
+    {
+      "id": "innermongolia",
+      "zh": "内蒙古",
+      "en": "Inner Mongolia",
+      "es": "Mongolia Interior",
+      "ru": "Внутренняя Монголия",
+      "ar": "منغوليا الداخلية",
+      "fr": "Mongolie-Intérieure"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "BSCI",
+      "label": "BSCI",
+      "zh": "商业社会合规倡议",
+      "en": "Business Social Compliance"
+    },
+    {
+      "id": "OEKO-TEX",
+      "label": "OEKO-TEX",
+      "zh": "生态纺织品认证",
+      "en": "Ecological Textile Standard"
+    },
+    {
+      "id": "SEDEX",
+      "label": "SEDEX",
+      "zh": "供应商商业道德",
+      "en": "Supplier Ethical Data Exchange"
+    },
+    {
+      "id": "WRAP",
+      "label": "WRAP",
+      "zh": "环球服装生产责任",
+      "en": "Worldwide Responsible Apparel"
+    },
+    {
+      "id": "GOTS",
+      "label": "GOTS",
+      "zh": "全球有机纺织品",
+      "en": "Global Organic Textile Std"
+    },
+    {
+      "id": "GRS",
+      "label": "GRS",
+      "zh": "全球回收标准",
+      "en": "Global Recycled Standard"
+    },
+    {
+      "id": "ISO9001",
+      "label": "ISO 9001",
+      "zh": "质量管理体系",
+      "en": "Quality Management System"
+    },
+    {
+      "id": "OekoTex100",
+      "label": "OEKO-TEX 100",
+      "zh": "纺织品有害物质检测",
+      "en": "Standard 100 by OEKO-TEX"
+    }
+  ],
+  "factories": [
+    {
+      "id": "fz-001",
+      "isHeadquarters": true,
+      "name": {
+        "zh": "佛山衣主 · 总厂",
+        "en": "FOSHAN GarmentMaster · HQ",
+        "es": "FOSHAN GarmentMaster · Sede",
+        "ru": "FOSHAN GarmentMaster · Штаб",
+        "ar": "FOSHAN GarmentMaster · المقر",
+        "fr": "FOSHAN GarmentMaster · Siège"
+      },
+      "city": {
+        "zh": "佛山禅城",
+        "en": "Foshan Chancheng",
+        "es": "Foshan Chancheng",
+        "ru": "Фошань Чаньчэн",
+        "ar": "فوشان تشانتشنغ",
+        "fr": "Foshan Chancheng"
+      },
+      "region": "foshan",
+      "established": 2008,
+      "factoryArea": 18000,
+      "employees": 480,
+      "monthlyCapacity": 320000,
+      "moq": 200,
+      "leadTimeDays": 30,
+      "categories": [
+        "knit",
+        "sport",
+        "woven",
+        "fashion"
+      ],
+      "certifications": [
+        "BSCI",
+        "OekoTex100",
+        "SEDEX",
+        "ISO9001"
+      ],
+      "equipment": {
+        "sewingMachines": 480,
+        "cuttingLines": 10,
+        "embroideryMachines": 18,
+        "printingLines": 6,
+        "knittingMachines": 24
+      },
+      "specialties": {
+        "zh": [
+          "针织卫衣",
+          "运动套装",
+          "拉链外套",
+          "抓绒衣",
+          "梭织衬衫"
+        ],
+        "en": [
+          "Knit sweatshirts",
+          "Sports sets",
+          "Zip jackets",
+          "Fleece wear",
+          "Woven shirts"
+        ],
+        "es": [
+          "Sudaderas de punto",
+          "Conjuntos deportivos",
+          "Chaquetas con cierre",
+          "Polar",
+          "Camisas tejidas"
+        ],
+        "ru": [
+          "Трикотажные толстовки",
+          "Спортивные костюмы",
+          "Куртки на молнии",
+          "Флис",
+          "Тканые рубашки"
+        ],
+        "ar": [
+          "سويت شيرت تريكو",
+          "بدلات رياضية",
+          "سترات بسحاب",
+          "فليس",
+          "قمصان منسوجة"
+        ],
+        "fr": [
+          "Sweat-shirts en maille",
+          "Ensembles de sport",
+          "Vestes zippées",
+          "Polaire",
+          "Chemises tissées"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主自营总厂，占地 1.8 万平方米，480+ 员工，配备 480+ 台 JACK 牌工业缝纫机、24 台电脑横机、18 台绣花机。20 年针织专精，月产能 32 万件，已为欧美 30+ 品牌稳定供货。",
+        "en": "FOSHAN GarmentMaster's self-operated headquarters covering 18,000 m², with 480+ workers and 480+ JACK industrial sewing machines, 24 computerized knitting machines, 18 embroidery units. 20 years of knitwear expertise. Monthly capacity 320K pieces. Trusted by 30+ EU/US brands.",
+        "es": "Sede central de FOSHAN GarmentMaster, 18,000 m², 480+ trabajadores, 480+ máquinas JACK, 24 máquinas de tejer computarizadas, 18 unidades de bordado. 20 años de experiencia. Capacidad mensual 320K piezas.",
+        "ru": "Собственная штаб-квартира FOSHAN GarmentMaster, 18 000 м², более 480 рабочих, более 480 промышленных машин JACK, 24 компьютеризированных вязальных машины, 18 вышивальных машин. 20 лет опыта.",
+        "ar": "المقر الرئيسي لشركة FOSHAN GarmentMaster، 18,000 متر مربع، 480+ عامل، 480+ ماكينة خياطة صناعية JACK، 24 ماكينة حياكة محوسبة، 18 وحدة تطريز. 20 عامًا من الخبرة.",
+        "fr": "Siège de FOSHAN GarmentMaster, 18 000 m², 480+ ouvriers, 480+ machines industrielles JACK, 24 machines à tricoter, 18 unités de broderie. 20 ans d'expertise."
+      },
+      "images": [
+        "fz-001-1.jpg",
+        "fz-001-2.jpg",
+        "fz-001-3.jpg",
+        "fz-001-4.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "BrandX",
+          "country": "US",
+          "year": 2024,
+          "product": "Men's hoodie",
+          "quantity": 50000
+        },
+        {
+          "brand": "NordicStyle",
+          "country": "SE",
+          "year": 2024,
+          "product": "Women's fleece",
+          "quantity": 30000
+        },
+        {
+          "brand": "OutdoorPlus",
+          "country": "DE",
+          "year": 2023,
+          "product": "Zip-up jacket",
+          "quantity": 22000
+        }
+      ],
+      "contact": {
+        "manager": "Mr. Wang",
+        "phone": "+86-757-8888-0001",
+        "email": "fz001@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000001"
+      }
+    },
+    {
+      "id": "fz-002",
+      "name": {
+        "zh": "佛山衣主 · 二厂 (梭织)",
+        "en": "FOSHAN GarmentMaster · Plant 2 (Woven)",
+        "es": "FOSHAN GarmentMaster · Planta 2 (Tejido)",
+        "ru": "FOSHAN GarmentMaster · Завод 2 (Ткани)",
+        "ar": "FOSHAN GarmentMaster · مصنع 2 (منسوجات)",
+        "fr": "FOSHAN GarmentMaster · Usine 2 (Tissé)"
+      },
+      "city": {
+        "zh": "佛山禅城",
+        "en": "Foshan Chancheng",
+        "es": "Foshan Chancheng",
+        "ru": "Фошань Чаньчэн",
+        "ar": "فوشان تشانتشنغ",
+        "fr": "Foshan Chancheng"
+      },
+      "region": "foshan",
+      "established": 2012,
+      "factoryArea": 14000,
+      "employees": 360,
+      "monthlyCapacity": 220000,
+      "moq": 300,
+      "leadTimeDays": 30,
+      "categories": [
+        "woven",
+        "fashion"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "ISO9001"
+      ],
+      "equipment": {
+        "sewingMachines": 380,
+        "cuttingLines": 8,
+        "embroideryMachines": 6,
+        "printingLines": 4
+      },
+      "specialties": {
+        "zh": [
+          "男女衬衫",
+          "连衣裙",
+          "西装外套",
+          "工装裤"
+        ],
+        "en": [
+          "Mens & womens shirts",
+          "Dresses",
+          "Blazers",
+          "Cargo pants"
+        ],
+        "es": [
+          "Camisas unisex",
+          "Vestidos",
+          "Blazers",
+          "Pantalones cargo"
+        ],
+        "ru": [
+          "Мужские и женские рубашки",
+          "Платья",
+          "Блейзеры",
+          "Карго"
+        ],
+        "ar": [
+          "قمصان رجالية ونسائية",
+          "فساتين",
+          "بليزرات",
+          "سراويل كارغو"
+        ],
+        "fr": [
+          "Chemises homme/femme",
+          "Robes",
+          "Blazers",
+          "Pantalons cargo"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主二厂专精梭织全品类，14 年专注衬衫/西装/连衣裙，自有面料检测实验室，平均克重控制 ±2%。",
+        "en": "FOSHAN GarmentMaster Plant 2 specializes in woven apparel with 14 years of expertise in shirts, blazers, and dresses. In-house fabric testing lab with ±2% GSM tolerance.",
+        "es": "Planta 2 de FOSHAN GarmentMaster especializada en tejido plano con 14 años de experiencia en camisas, blazers y vestidos. Laboratorio interno con tolerancia ±2%.",
+        "ru": "Завод 2 FOSHAN GarmentMaster специализируется на тканых изделиях с 14-летним опытом. Собственная лаборатория контроля ткани с допуском ±2%.",
+        "ar": "مصنع 2 في FOSHAN GarmentMaster متخصص في الأقمشة المنسوجة مع 14 عامًا من الخبرة. مختبر داخلي بتفاوت ±2%.",
+        "fr": "Usine 2 de FOSHAN GarmentMaster spécialisée dans le tissage avec 14 ans d'expertise. Laboratoire interne avec tolérance ±2%."
+      },
+      "images": [
+        "fz-002-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "FormalCo",
+          "country": "IT",
+          "year": 2024,
+          "product": "Men's shirts",
+          "quantity": 80000
+        },
+        {
+          "brand": "UrbanLine",
+          "country": "FR",
+          "year": 2024,
+          "product": "Womens blazers",
+          "quantity": 25000
+        },
+        {
+          "brand": "StyleHub",
+          "country": "UK",
+          "year": 2023,
+          "product": "Summer dresses",
+          "quantity": 40000
+        }
+      ],
+      "contact": {
+        "manager": "Ms. Liu",
+        "phone": "+86-757-8888-0002",
+        "email": "fz002@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000002"
+      }
+    },
+    {
+      "id": "fz-003",
+      "name": {
+        "zh": "佛山衣主 · 三厂 (多品类)",
+        "en": "FOSHAN GarmentMaster · Plant 3 (Multi-category)",
+        "es": "FOSHAN GarmentMaster · Planta 3 (Multi)",
+        "ru": "FOSHAN GarmentMaster · Завод 3 (Мульти)",
+        "ar": "FOSHAN GarmentMaster · مصنع 3 (متعدد)",
+        "fr": "FOSHAN GarmentMaster · Usine 3 (Multi)"
+      },
+      "city": {
+        "zh": "佛山禅城",
+        "en": "Foshan Chancheng",
+        "es": "Foshan Chancheng",
+        "ru": "Фошань Чаньчэн",
+        "ar": "فوشان تشانتشنغ",
+        "fr": "Foshan Chancheng"
+      },
+      "region": "foshan",
+      "established": 2015,
+      "factoryArea": 16000,
+      "employees": 420,
+      "monthlyCapacity": 260000,
+      "moq": 300,
+      "leadTimeDays": 32,
+      "categories": [
+        "denim",
+        "woven",
+        "home"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "GRS"
+      ],
+      "equipment": {
+        "sewingMachines": 460,
+        "cuttingLines": 9,
+        "embroideryMachines": 4,
+        "printingLines": 5,
+        "washingMachines": 8
+      },
+      "specialties": {
+        "zh": [
+          "男女牛仔裤",
+          "牛仔外套",
+          "牛仔裙",
+          "水洗做旧"
+        ],
+        "en": [
+          "Mens & womens jeans",
+          "Denim jackets",
+          "Denim skirts",
+          "Vintage wash"
+        ],
+        "es": [
+          "Jeans unisex",
+          "Chaquetas de mezclilla",
+          "Faldas de mezclilla",
+          "Lavado vintage"
+        ],
+        "ru": [
+          "Мужские и женские джинсы",
+          "Джинсовые куртки",
+          "Джинсовые юбки",
+          "Винтажная стирка"
+        ],
+        "ar": [
+          "جينز رجالي ونسائي",
+          "سترات دنيم",
+          "تنانير دنيم",
+          "غسيل عتيق"
+        ],
+        "fr": [
+          "Jeans homme/femme",
+          "Vestes denim",
+          "Jupes denim",
+          "Lavage vintage"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主三厂多品类综合车间，8 台水洗设备 (含激光/臭氧/酶洗)，可承接 ESG 再生牛仔订单与多品类混单生产。",
+        "en": "FOSHAN GarmentMaster Plant 3 — multi-category workshop. 8 washing units (laser/ozone/enzymatic). Accepts recycled denim and mixed-category bulk orders.",
+        "es": "Planta 3 de FOSHAN GarmentMaster — taller multi-categoría. 8 unidades de lavado (láser/ozono/enzimático). Acepta pedidos de mezclilla reciclada.",
+        "ru": "Завод 3 FOSHAN GarmentMaster — мульти-категория. 8 моечных установок (лазер/озон/фермент). Принимает переработанный деним.",
+        "ar": "مصنع 3 FOSHAN GarmentMaster - متعدد الفئات. 8 وحدات غسيل. يقبل طلبات الدنيم المعاد تدويره.",
+        "fr": "Usine 3 FOSHAN GarmentMaster — multi-catégorie. 8 unités de lavage (laser/ozone/enzymatique). Accepte denim recyclé."
+      },
+      "images": [
+        "fz-003-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "DenimCo",
+          "country": "US",
+          "year": 2024,
+          "product": "Slim fit jeans",
+          "quantity": 60000
+        },
+        {
+          "brand": "RawWorks",
+          "country": "JP",
+          "year": 2023,
+          "product": "Selvedge denim",
+          "quantity": 18000
+        },
+        {
+          "brand": "EcoWeave",
+          "country": "NL",
+          "year": 2024,
+          "product": "Recycled denim",
+          "quantity": 25000
+        }
+      ],
+      "contact": {
+        "manager": "Mr. Chen",
+        "phone": "+86-757-8888-0003",
+        "email": "fz003@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000003"
+      }
+    },
+    {
+      "id": "fz-004",
+      "name": {
+        "zh": "佛山衣主 · 四厂 (品控)",
+        "en": "FOSHAN GarmentMaster · Plant 4 (QC)",
+        "es": "FOSHAN GarmentMaster · Planta 4 (QC)",
+        "ru": "FOSHAN GarmentMaster · Завод 4 (QC)",
+        "ar": "FOSHAN GarmentMaster · مصنع 4 (QC)",
+        "fr": "FOSHAN GarmentMaster · Usine 4 (QC)"
+      },
+      "city": {
+        "zh": "佛山禅城",
+        "en": "Foshan Chancheng",
+        "es": "Foshan Chancheng",
+        "ru": "Фошань Чаньчэн",
+        "ar": "فوشان تشانتشنغ",
+        "fr": "Foshan Chancheng"
+      },
+      "region": "foshan",
+      "established": 2016,
+      "factoryArea": 8000,
+      "employees": 220,
+      "monthlyCapacity": 100000,
+      "moq": 100,
+      "leadTimeDays": 25,
+      "categories": [
+        "fashion",
+        "silk"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "ISO9001"
+      ],
+      "equipment": {
+        "sewingMachines": 220,
+        "cuttingLines": 4,
+        "embroideryMachines": 8,
+        "printingLines": 4
+      },
+      "specialties": {
+        "zh": [
+          "小单快返",
+          "独立设计师合作",
+          "高级时装",
+          "样衣到货 7 天"
+        ],
+        "en": [
+          "Small batch quick response",
+          "Independent designer collab",
+          "High fashion",
+          "7-day sample"
+        ],
+        "es": [
+          "Lotes pequeños respuesta rápida",
+          "Colaboración con diseñadores",
+          "Alta moda",
+          "Muestra en 7 días"
+        ],
+        "ru": [
+          "Мелкие партии быстрый отклик",
+          "Сотрудничество с дизайнерами",
+          "Высокая мода",
+          "Образец за 7 дней"
+        ],
+        "ar": [
+          "دفعات صغيرة استجابة سريعة",
+          "تعاون مع مصممين مستقلين",
+          "أزياء راقية",
+          "عينة في 7 أيام"
+        ],
+        "fr": [
+          "Petites séries rapides",
+          "Collab designers indépendants",
+          "Haute couture",
+          "Échantillon 7 jours"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主四厂品控与小单快返车间，擅长小单快返 (100 件起)，7 天样衣、15 天首批，专为独立设计师与电商快时尚打造。AQL 2.5 检验标准贯穿全流程。",
+        "en": "FOSHAN GarmentMaster Plant 4 — QC & quick-response workshop. Specializes in small-batch orders (MOQ 100), 7-day samples, 15-day initial bulk. AQL 2.5 inspection throughout.",
+        "es": "Planta 4 de FOSHAN GarmentMaster — taller de QC y respuesta rápida. Lotes pequeños (MOQ 100), muestras en 7 días, primera producción en 15 días. Inspección AQL 2.5.",
+        "ru": "Завод 4 FOSHAN GarmentMaster — QC и быстрый отклик. Мелкие партии (MOQ 100), образцы за 7 дней, первая партия за 15 дней. Контроль AQL 2.5.",
+        "ar": "مصنع 4 FOSHAN GarmentMaster - مراقبة الجودة والاستجابة السريعة. دفعات صغيرة (100 قطعة كحد أدنى)، عينات 7 أيام، أول دفعة 15 يومًا.",
+        "fr": "Usine 4 FOSHAN GarmentMaster — QC et réponse rapide. Petites séries (MOQ 100), échantillons 7 jours, premier lot 15 jours. Contrôle AQL 2.5."
+      },
+      "images": [
+        "fz-001-4.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "IndieLabel",
+          "country": "US",
+          "year": 2024,
+          "product": "Womens dress",
+          "quantity": 800
+        },
+        {
+          "brand": "FastFashion",
+          "country": "ES",
+          "year": 2024,
+          "product": "Drop collection",
+          "quantity": 3000
+        },
+        {
+          "brand": "StudioX",
+          "country": "KR",
+          "year": 2024,
+          "product": "Runway look",
+          "quantity": 200
+        }
+      ],
+      "contact": {
+        "manager": "Ms. Zhao",
+        "phone": "+86-757-8888-0004",
+        "email": "fz004@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000004"
+      }
+    },
+    {
+      "id": "fz-005",
+      "name": {
+        "zh": "佛山衣主 · 五厂 (后整理)",
+        "en": "FOSHAN GarmentMaster · Plant 5 (Finishing)",
+        "es": "FOSHAN GarmentMaster · Planta 5 (Acabado)",
+        "ru": "FOSHAN GarmentMaster · Завод 5 (Отделка)",
+        "ar": "FOSHAN GarmentMaster · مصنع 5 (تشطيب)",
+        "fr": "FOSHAN GarmentMaster · Usine 5 (Finition)"
+      },
+      "city": {
+        "zh": "佛山禅城",
+        "en": "Foshan Chancheng",
+        "es": "Foshan Chancheng",
+        "ru": "Фошань Чаньчэн",
+        "ar": "فوشان تشانتشنغ",
+        "fr": "Foshan Chancheng"
+      },
+      "region": "foshan",
+      "established": 2018,
+      "factoryArea": 10000,
+      "employees": 260,
+      "monthlyCapacity": 150000,
+      "moq": 200,
+      "leadTimeDays": 28,
+      "categories": [
+        "outerwear",
+        "woven",
+        "home"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX"
+      ],
+      "equipment": {
+        "sewingMachines": 280,
+        "cuttingLines": 5,
+        "embroideryMachines": 4,
+        "printingLines": 3,
+        "weldingMachines": 4
+      },
+      "specialties": {
+        "zh": [
+          "羽绒服",
+          "棉服",
+          "冲锋衣",
+          "家居服"
+        ],
+        "en": [
+          "Down jackets",
+          "Padded coats",
+          "Shell jackets",
+          "Homewear"
+        ],
+        "es": [
+          "Chaquetas de plumas",
+          "Abrigos acolchados",
+          "Chaquetas shell",
+          "Ropa de hogar"
+        ],
+        "ru": [
+          "Пуховики",
+          "Утеплённые куртки",
+          "Мембранные куртки",
+          "Домашняя одежда"
+        ],
+        "ar": [
+          "سترات الريش",
+          "معاطف مبطنة",
+          "سترات شيل",
+          "ملابس منزلية"
+        ],
+        "fr": [
+          "Doudounes",
+          "Manteaux matelassés",
+          "Vestes hardshell",
+          "Vêtements d'intérieur"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主五厂后整理与外套专精车间，配备自动充绒机与水洗设备，专精羽绒服/棉服/家居服全品类。",
+        "en": "FOSHAN GarmentMaster Plant 5 — finishing & outerwear workshop. Equipped with auto-filling machines and washing units. Specializes in down/padded/homewear.",
+        "es": "Planta 5 de FOSHAN GarmentMaster — taller de acabado y abrigos. Equipada con máquinas de llenado automáticas y unidades de lavado. Especializados en plumas/ropa de hogar.",
+        "ru": "Завод 5 FOSHAN GarmentMaster — отделка и верхняя одежда. Оснащён автоматическими наполнителями и моечными установками. Специализация: пуховики, утеплённая, домашняя одежда.",
+        "ar": "مصنع 5 FOSHAN GarmentMaster - التشطيب والملابس الخارجية. ماكينات تعبئة آلية. متخصص في الريش والمنزلية.",
+        "fr": "Usine 5 FOSHAN GarmentMaster — finition et vêtements d'extérieur. Machines de remplissage automatiques et unités de lavage. Spécialité duvet et homewear."
+      },
+      "images": [
+        "fz-002-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "ArcticWear",
+          "country": "CA",
+          "year": 2024,
+          "product": "Expedition parka",
+          "quantity": 12000
+        },
+        {
+          "brand": "NorthPeak",
+          "country": "NO",
+          "year": 2023,
+          "product": "Down jacket",
+          "quantity": 28000
+        },
+        {
+          "brand": "AlpinePro",
+          "country": "KR",
+          "year": 2024,
+          "product": "Shell jacket",
+          "quantity": 18000
+        }
+      ],
+      "contact": {
+        "manager": "Mr. Zhang",
+        "phone": "+86-757-8888-0005",
+        "email": "fz005@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000005"
+      }
+    },
+    {
+      "id": "fz-006",
+      "name": {
+        "zh": "佛山衣主 · 六厂 (运动)",
+        "en": "FOSHAN GarmentMaster · Plant 6 (Sportswear)",
+        "es": "FOSHAN GarmentMaster · Planta 6 (Deporte)",
+        "ru": "FOSHAN GarmentMaster · Завод 6 (Спорт)",
+        "ar": "FOSHAN GarmentMaster · مصنع 6 (رياضة)",
+        "fr": "FOSHAN GarmentMaster · Usine 6 (Sport)"
+      },
+      "city": {
+        "zh": "佛山南海",
+        "en": "Foshan Nanhai",
+        "es": "Foshan Nanhai",
+        "ru": "Фошань Наньхай",
+        "ar": "فوشان نانهاي",
+        "fr": "Foshan Nanhai"
+      },
+      "region": "foshan",
+      "established": 2019,
+      "factoryArea": 12000,
+      "employees": 320,
+      "monthlyCapacity": 200000,
+      "moq": 300,
+      "leadTimeDays": 30,
+      "categories": [
+        "sport",
+        "knit"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "GRS"
+      ],
+      "equipment": {
+        "sewingMachines": 360,
+        "cuttingLines": 6,
+        "embroideryMachines": 10,
+        "printingLines": 6,
+        "seamlessKnitting": 18
+      },
+      "specialties": {
+        "zh": [
+          "瑜伽裤",
+          "运动内衣",
+          "跑步T恤",
+          "无缝针织"
+        ],
+        "en": [
+          "Yoga pants",
+          "Sports bras",
+          "Running tees",
+          "Seamless knit"
+        ],
+        "es": [
+          "Mallas de yoga",
+          "Sujetadores deportivos",
+          "Camisetas running",
+          "Tejido sin costuras"
+        ],
+        "ru": [
+          "Йога-штаны",
+          "Спортивные бюстгальтеры",
+          "Беговые футболки",
+          "Бесшовный трикотаж"
+        ],
+        "ar": [
+          "بناطيل يوغا",
+          "حمالات صدر رياضية",
+          "قمصان جري",
+          "تريكو بدون درزات"
+        ],
+        "fr": [
+          "Leggings yoga",
+          "Brassières sport",
+          "Tee-shirts running",
+          "Maille sans couture"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主六厂运动功能性专精车间，自有 18 台意大利 SANTONI 无缝针织机，专注高弹/吸湿快干/抗 UV 面料应用。",
+        "en": "FOSHAN GarmentMaster Plant 6 — sportswear functional workshop. 18 Italian SANTONI seamless knitting machines. High-stretch / moisture-wicking / UV-resistant fabrics.",
+        "es": "Planta 6 de FOSHAN GarmentMaster — taller funcional deportivo. 18 máquinas italianas SANTONI sin costuras. Tejidos de alta elasticidad/transpirables/UV.",
+        "ru": "Завод 6 FOSHAN GarmentMaster — спортивный функциональный цех. 18 итальянских машин SANTONI. Высокая растяжимость/влагоотвод/UV.",
+        "ar": "مصنع 6 FOSHAN GarmentMaster - الملابس الرياضية الوظيفية. 18 ماكينة إيطالية SANTONI بدون درزات. مرونة عالية/امتصاص الرطوبة/مقاومة الأشعة فوق البنفسجية.",
+        "fr": "Usine 6 FOSHAN GarmentMaster — atelier sportif fonctionnel. 18 machines italiennes SANTONI sans couture. Haute élasticité/respirant/UV."
+      },
+      "images": [
+        "fz-003-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "ActiveLife",
+          "country": "AU",
+          "year": 2024,
+          "product": "Yoga set",
+          "quantity": 35000
+        },
+        {
+          "brand": "RunPro",
+          "country": "US",
+          "year": 2024,
+          "product": "Running tee",
+          "quantity": 50000
+        },
+        {
+          "brand": "FitWear",
+          "country": "DE",
+          "year": 2023,
+          "product": "Sports bra",
+          "quantity": 28000
+        }
+      ],
+      "contact": {
+        "manager": "Mr. Li",
+        "phone": "+86-757-8888-0006",
+        "email": "fz006@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000006"
+      }
+    },
+    {
+      "id": "fz-007",
+      "name": {
+        "zh": "佛山衣主 · 均安童装厂",
+        "en": "FOSHAN GarmentMaster · Jun'an Kidswear",
+        "es": "FOSHAN GarmentMaster · Ropa Jun'an",
+        "ru": "FOSHAN GarmentMaster · Цзюнь'ань Детская",
+        "ar": "FOSHAN GarmentMaster · جونعان للأطفال",
+        "fr": "FOSHAN GarmentMaster · Jun'an Enfant"
+      },
+      "city": {
+        "zh": "佛山顺德",
+        "en": "Foshan Shunde",
+        "es": "Foshan Shunde",
+        "ru": "Фошань Шуньдэ",
+        "ar": "فوشان شوند",
+        "fr": "Foshan Shunde"
+      },
+      "region": "foshan",
+      "established": 2010,
+      "factoryArea": 12000,
+      "employees": 260,
+      "monthlyCapacity": 280000,
+      "moq": 200,
+      "leadTimeDays": 30,
+      "categories": [
+        "kids"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "GOTS"
+      ],
+      "equipment": {
+        "sewingMachines": 300,
+        "cuttingLines": 5,
+        "embroideryMachines": 6,
+        "printingLines": 4
+      },
+      "specialties": {
+        "zh": [
+          "新生儿礼盒",
+          "婴幼连体衣",
+          "校服",
+          "童趣印花"
+        ],
+        "en": [
+          "Newborn gift sets",
+          "Baby rompers",
+          "School uniforms",
+          "Fun prints"
+        ],
+        "es": [
+          "Sets para recién nacidos",
+          "Monos para bebé",
+          "Uniformes escolares",
+          "Estampados divertidos"
+        ],
+        "ru": [
+          "Подарочные наборы для новорождённых",
+          "Комбинезоны",
+          "Школьная форма",
+          "Детские принты"
+        ],
+        "ar": [
+          "أطقم مواليد",
+          "بدلات أطفال",
+          "زي مدرسي",
+          "طبعات مرحة"
+        ],
+        "fr": [
+          "Coffrets nouveau-né",
+          "Combinaisons bébé",
+          "Uniformes scolaires",
+          "Imprimés ludiques"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主均安童装厂，佛山顺德均安童装产业带核心工厂，专精 0-12 岁婴幼童装，全面料 A 类母婴标准，已通过 GOTS 有机棉认证。",
+        "en": "FOSHAN GarmentMaster Jun'an Kidswear — core factory in the Shunde Jun'an kidswear cluster, Foshan. Specializes in 0-12 years infant & toddler apparel, all Class A infant-safe fabric, GOTS organic cotton certified.",
+        "es": "Fábrica Jun'an de FOSHAN GarmentMaster — fábrica núcleo en el cluster infantil de Shunde Jun'an, Foshan. Especializada en ropa para bebés 0-12 años, tejido Clase A, GOTS orgánico certificado.",
+        "ru": "Фабрика Цзюнь'ань FOSHAN GarmentMaster — базовое предприятие в детском кластере Шуньдэ Цзюнь'ань, Фошань. Специализация на детской одежде 0-12 лет, ткань класса A, GOTS органический хлопок.",
+        "ar": "مصنع جونعان لـ FOSHAN GarmentMaster - المصنع الأساسي في تجمع ملابس الأطفال شوند جونعان، فوشان. متخصص في ملابس الرضع 0-12 سنة، قماش الفئة A، قطن عضوي GOTS.",
+        "fr": "Usine Jun'an de FOSHAN GarmentMaster — usine centrale du cluster kidswear Shunde Jun'an, Foshan. Spécialisée 0-12 ans, tissu classe A bébé, coton bio GOTS."
+      },
+      "images": [
+        "fz-001-1.jpg",
+        "fz-001-2.jpg",
+        "fz-001-3.jpg",
+        "fz-001-4.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "BabyBrand",
+          "country": "UK",
+          "year": 2024,
+          "product": "Newborn set",
+          "quantity": 40000
+        },
+        {
+          "brand": "SchoolWear",
+          "country": "AU",
+          "year": 2023,
+          "product": "School uniform",
+          "quantity": 80000
+        },
+        {
+          "brand": "TotsJoy",
+          "country": "FR",
+          "year": 2024,
+          "product": "Kids printed tee",
+          "quantity": 60000
+        }
+      ],
+      "contact": {
+        "manager": "Ms. Wu",
+        "phone": "+86-757-8888-0007",
+        "email": "fz007@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000007"
+      }
+    },
+    {
+      "id": "fz-008",
+      "name": {
+        "zh": "佛山衣主 · 大沥内衣厂",
+        "en": "FOSHAN GarmentMaster · Dali Lingerie",
+        "es": "FOSHAN GarmentMaster · Lencería Dali",
+        "ru": "FOSHAN GarmentMaster · Дани Бельё",
+        "ar": "FOSHAN GarmentMaster · دالي لانجري",
+        "fr": "FOSHAN GarmentMaster · Dali Lingerie"
+      },
+      "city": {
+        "zh": "佛山南海",
+        "en": "Foshan Nanhai",
+        "es": "Foshan Nanhai",
+        "ru": "Фошань Наньхай",
+        "ar": "فوشان نانهاي",
+        "fr": "Foshan Nanhai"
+      },
+      "region": "foshan",
+      "established": 2006,
+      "factoryArea": 15000,
+      "employees": 320,
+      "monthlyCapacity": 250000,
+      "moq": 300,
+      "leadTimeDays": 30,
+      "categories": [
+        "fashion",
+        "knit"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "GRS"
+      ],
+      "equipment": {
+        "sewingMachines": 360,
+        "cuttingLines": 6,
+        "embroideryMachines": 12,
+        "printingLines": 4
+      },
+      "specialties": {
+        "zh": [
+          "无缝内衣",
+          "文胸套装",
+          "家居服",
+          "塑身衣"
+        ],
+        "en": [
+          "Seamless underwear",
+          "Bra sets",
+          "Loungewear",
+          "Shapewear"
+        ],
+        "es": [
+          "Ropa interior sin costuras",
+          "Conjuntos de sujetador",
+          "Ropa de estar",
+          "Fajas"
+        ],
+        "ru": [
+          "Бесшовное бельё",
+          "Комплекты бюстгальтеров",
+          "Домашняя одежда",
+          "Корректирующее бельё"
+        ],
+        "ar": [
+          "ملابس داخلية بدون درزات",
+          "أطقم حمالات صدر",
+          "ملابس منزلية",
+          "ملابس تشكيل"
+        ],
+        "fr": [
+          "Sous-vêtements sans couture",
+          "Ensembles de soutien-gorge",
+          "Loungewear",
+          "Gaines"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主大沥内衣厂，南海大沥内衣产业带核心工厂，自有 8 台意大利 SANTONI 无缝针织机，专精无缝内衣/文胸/家居服，材料通过 OEKO-TEX 100 婴儿级认证。",
+        "en": "FOSHAN GarmentMaster Dali Lingerie — core factory in Nanhai Dali underwear cluster. 8 Italian SANTONI seamless knitting machines. Seamless underwear / bras / loungewear. OEKO-TEX 100 baby-grade certified materials.",
+        "es": "Fábrica de lencería Dali de FOSHAN GarmentMaster — núcleo del cluster de ropa interior Nanhai Dali. 8 máquinas italianas SANTONI sin costuras. Ropa interior / sostenes / ropa de estar. Certificación OEKO-TEX 100.",
+        "ru": "Фабрика белья Дани FOSHAN GarmentMaster — базовое предприятие в кластере белья Наньхай Дани. 8 итальянских машин SANTONI. Бесшовное бельё / бюстгальтеры / домашняя одежда. OEKO-TEX 100.",
+        "ar": "مصنع دالي لانجري لـ FOSHAN GarmentMaster - مصنع أساسي في تجمع الملابس الداخلية نانهاي دالي. 8 ماكينات إيطالية SANTONI بدون درزات. OEKO-TEX 100.",
+        "fr": "Usine lingerie Dali de FOSHAN GarmentMaster — usine centrale du cluster Nanhai Dali. 8 machines italiennes SANTONI sans couture. OEKO-TEX 100."
+      },
+      "images": [
+        "fz-002-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "IntimacyPlus",
+          "country": "US",
+          "year": 2024,
+          "product": "Seamless bra set",
+          "quantity": 50000
+        },
+        {
+          "brand": "SoftLine",
+          "country": "DE",
+          "year": 2024,
+          "product": "Loungewear set",
+          "quantity": 30000
+        },
+        {
+          "brand": "BelleCore",
+          "country": "FR",
+          "year": 2023,
+          "product": "Shapewear",
+          "quantity": 18000
+        }
+      ],
+      "contact": {
+        "manager": "Ms. Sun",
+        "phone": "+86-757-8888-0008",
+        "email": "fz008@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000008"
+      }
+    },
+    {
+      "id": "fz-009",
+      "name": {
+        "zh": "佛山衣主 · 张槎针织厂",
+        "en": "FOSHAN GarmentMaster · Zhangcha Knit",
+        "es": "FOSHAN GarmentMaster · Tejido Zhangcha",
+        "ru": "FOSHAN GarmentMaster · Чжанча Трикотаж",
+        "ar": "FOSHAN GarmentMaster · تشانغتشا تريكو",
+        "fr": "FOSHAN GarmentMaster · Zhangcha Maille"
+      },
+      "city": {
+        "zh": "佛山禅城",
+        "en": "Foshan Chancheng",
+        "es": "Foshan Chancheng",
+        "ru": "Фошань Чаньчэн",
+        "ar": "فوشان تشانتشنغ",
+        "fr": "Foshan Chancheng"
+      },
+      "region": "foshan",
+      "established": 2009,
+      "factoryArea": 11000,
+      "employees": 240,
+      "monthlyCapacity": 180000,
+      "moq": 200,
+      "leadTimeDays": 30,
+      "categories": [
+        "knit",
+        "sport"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX"
+      ],
+      "equipment": {
+        "sewingMachines": 260,
+        "cuttingLines": 5,
+        "embroideryMachines": 8,
+        "printingLines": 6
+      },
+      "specialties": {
+        "zh": [
+          "针织套头衫",
+          "运动卫衣",
+          "抓绒衣",
+          "电脑横机产品"
+        ],
+        "en": [
+          "Knit pullovers",
+          "Sports hoodies",
+          "Fleece wear",
+          "Computerized knit"
+        ],
+        "es": [
+          "Suéteres de punto",
+          "Sudaderas deportivas",
+          "Polar",
+          "Punto computarizado"
+        ],
+        "ru": [
+          "Трикотажные пуловеры",
+          "Спортивные толстовки",
+          "Флис",
+          "Компьютерная вязка"
+        ],
+        "ar": [
+          "كنزات تريكو",
+          "سويت شيرت رياضي",
+          "فليس",
+          "تريكو محوسب"
+        ],
+        "fr": [
+          "Pulls en maille",
+          "Sweat-shirts sport",
+          "Polaire",
+          "Maille informatisée"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主张槎针织厂，张槎针织产业带代表工厂，自有 32 台电脑横机，专注毛衫/卫衣/运动休闲针织。",
+        "en": "FOSHAN GarmentMaster Zhangcha Knit — representative factory in the Zhangcha knitwear cluster. 32 computerized flat knitting machines. Sweaters / hoodies / sports knits.",
+        "es": "Fábrica de punto Zhangcha de FOSHAN GarmentMaster — fábrica representativa en el cluster de punto Zhangcha. 32 máquinas computarizadas. Suéteres / sudaderas / punto deportivo.",
+        "ru": "Трикотажная фабрика Чжанча FOSHAN GarmentMaster — представитель кластера трикотажа Чжанча. 32 компьютеризированных вязальных машины. Свитера / толстовки / спортивный трикотаж.",
+        "ar": "مصنع تشانغتشا تريكو لـ FOSHAN GarmentMaster - مصنع ممثل في تجمع التريكو تشانغتشا. 32 ماكينة حياكة محوسبة.",
+        "fr": "Usine maille Zhangcha de FOSHAN GarmentMaster — usine représentante du cluster maille Zhangcha. 32 machines à tricoter informatisées."
+      },
+      "images": [
+        "fz-003-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "WoolHouse",
+          "country": "UK",
+          "year": 2024,
+          "product": "Pullover",
+          "quantity": 28000
+        },
+        {
+          "brand": "NordicKnit",
+          "country": "NO",
+          "year": 2024,
+          "product": "Hoodie",
+          "quantity": 35000
+        },
+        {
+          "brand": "SportLabel",
+          "country": "AU",
+          "year": 2023,
+          "product": "Sports sweatshirt",
+          "quantity": 22000
+        }
+      ],
+      "contact": {
+        "manager": "Mr. Huang",
+        "phone": "+86-757-8888-0009",
+        "email": "fz009@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000009"
+      }
+    },
+    {
+      "id": "fz-010",
+      "name": {
+        "zh": "佛山衣主 · 三水牛仔厂",
+        "en": "FOSHAN GarmentMaster · Sanshui Denim",
+        "es": "FOSHAN GarmentMaster · Mezclilla Sanshui",
+        "ru": "FOSHAN GarmentMaster · Саньшуй Джинса",
+        "ar": "FOSHAN GarmentMaster · سانشوي دنيم",
+        "fr": "FOSHAN GarmentMaster · Sanshui Denim"
+      },
+      "city": {
+        "zh": "佛山三水",
+        "en": "Foshan Sanshui",
+        "es": "Foshan Sanshui",
+        "ru": "Фошань Саньшуй",
+        "ar": "فوشان سانشوي",
+        "fr": "Foshan Sanshui"
+      },
+      "region": "foshan",
+      "established": 2005,
+      "factoryArea": 20000,
+      "employees": 420,
+      "monthlyCapacity": 200000,
+      "moq": 500,
+      "leadTimeDays": 35,
+      "categories": [
+        "denim",
+        "woven"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "GRS"
+      ],
+      "equipment": {
+        "sewingMachines": 460,
+        "cuttingLines": 8,
+        "embroideryMachines": 8,
+        "printingLines": 5,
+        "washingMachines": 12
+      },
+      "specialties": {
+        "zh": [
+          "男女牛仔裤",
+          "牛仔外套",
+          "牛仔半裙",
+          "水洗做旧"
+        ],
+        "en": [
+          "Mens & womens jeans",
+          "Denim jackets",
+          "Denim skirts",
+          "Vintage wash"
+        ],
+        "es": [
+          "Jeans unisex",
+          "Chaquetas de mezclilla",
+          "Faldas de mezclilla",
+          "Lavado vintage"
+        ],
+        "ru": [
+          "Мужские и женские джинсы",
+          "Джинсовые куртки",
+          "Джинсовые юбки",
+          "Винтажная стирка"
+        ],
+        "ar": [
+          "جينز رجالي ونسائي",
+          "سترات دنيم",
+          "تنانير دنيم",
+          "غسيل عتيق"
+        ],
+        "fr": [
+          "Jeans homme/femme",
+          "Vestes denim",
+          "Jupes denim",
+          "Lavage vintage"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主三水牛仔厂，配套 12 台大型水洗设备 (含激光/臭氧/酶洗)，可承接 ESG 再生牛仔订单。",
+        "en": "FOSHAN GarmentMaster Sanshui Denim — 12 washing units (laser/ozone/enzymatic). Accepts recycled denim and mixed-category bulk orders.",
+        "es": "Mezclilla Sanshui de FOSHAN GarmentMaster — 12 unidades de lavado (láser/ozono/enzimático). Acepta denim reciclado.",
+        "ru": "Джинсовая фабрика Саньшуй FOSHAN GarmentMaster — 12 моечных установок (лазер/озон/фермент). Принимает переработанный деним.",
+        "ar": "مصنع سانشوي دنيم لـ FOSHAN GarmentMaster - 12 وحدة غسيل. يقبل الدنيم المعاد تدويره.",
+        "fr": "Usine denim Sanshui de FOSHAN GarmentMaster — 12 unités de lavage. Accepte denim recyclé."
+      },
+      "images": [
+        "fz-002-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "DenimCo",
+          "country": "US",
+          "year": 2024,
+          "product": "Slim fit jeans",
+          "quantity": 60000
+        },
+        {
+          "brand": "RawWorks",
+          "country": "JP",
+          "year": 2023,
+          "product": "Selvedge denim",
+          "quantity": 18000
+        },
+        {
+          "brand": "EcoWeave",
+          "country": "NL",
+          "year": 2024,
+          "product": "Recycled denim",
+          "quantity": 25000
+        }
+      ],
+      "contact": {
+        "manager": "Mr. Qian",
+        "phone": "+86-757-8888-0010",
+        "email": "fz010@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000010"
+      }
+    },
+    {
+      "id": "fz-011",
+      "name": {
+        "zh": "佛山衣主 · 顺德时装厂",
+        "en": "FOSHAN GarmentMaster · Shunde Fashion",
+        "es": "FOSHAN GarmentMaster · Moda Shunde",
+        "ru": "FOSHAN GarmentMaster · Шуньдэ Мода",
+        "ar": "FOSHAN GarmentMaster · شوند موضة",
+        "fr": "FOSHAN GarmentMaster · Shunde Mode"
+      },
+      "city": {
+        "zh": "佛山顺德",
+        "en": "Foshan Shunde",
+        "es": "Foshan Shunde",
+        "ru": "Фошань Шуньдэ",
+        "ar": "فوشان شوند",
+        "fr": "Foshan Shunde"
+      },
+      "region": "foshan",
+      "established": 2014,
+      "factoryArea": 9000,
+      "employees": 180,
+      "monthlyCapacity": 50000,
+      "moq": 50,
+      "leadTimeDays": 25,
+      "categories": [
+        "silk",
+        "fashion"
+      ],
+      "certifications": [
+        "OEKO-TEX",
+        "GOTS"
+      ],
+      "equipment": {
+        "sewingMachines": 200,
+        "cuttingLines": 3,
+        "embroideryMachines": 24,
+        "handcraftLines": 6
+      },
+      "specialties": {
+        "zh": [
+          "真丝礼服",
+          "苏绣旗袍",
+          "丝绸睡衣",
+          "高端定制"
+        ],
+        "en": [
+          "Silk evening gowns",
+          "Su embroidery qipao",
+          "Silk sleepwear",
+          "Bespoke couture"
+        ],
+        "es": [
+          "Vestidos de seda",
+          "Qipao bordado Su",
+          "Ropa de dormir de seda",
+          "Alta costura a medida"
+        ],
+        "ru": [
+          "Шёлковые вечерние платья",
+          "Ципао с вышивкой Су",
+          "Шёлковая одежда для сна",
+          "Кутюр пошив"
+        ],
+        "ar": [
+          "فساتين حرير",
+          "تشيباو مطرزة سو",
+          "ملابس نوم حرير",
+          "كوتور مخصص"
+        ],
+        "fr": [
+          "Robes du soir en soie",
+          "Qipao broderie Su",
+          "Soie睡衣",
+          "Couture sur mesure"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主顺德时装厂，30 年真丝礼服与旗袍世家，国家级非遗苏绣传承合作单位，平均工龄 15 年+ 匠师团队。",
+        "en": "FOSHAN GarmentMaster Shunde Fashion — 30 years of silk evening gown heritage. Partner of national-level Su embroidery intangible heritage. 30 master artisans with 15+ years tenure.",
+        "es": "Moda Shunde de FOSHAN GarmentMaster — 30 años de vestidos de seda. Socio del patrimonio nacional de bordado Su. 30 maestros con 15+ años.",
+        "ru": "Шуньдэ мода FOSHAN GarmentMaster — 30 лет шёлковых платьев. Партнёр нематериального наследия вышивки Су. 30 мастеров со стажем 15+ лет.",
+        "ar": "موضة شوند لـ FOSHAN GarmentMaster - 30 عامًا من فساتين الحرير. شريك التراث غير المادي لتطريز سو. 30 حرفيًا.",
+        "fr": "Mode Shunde de FOSHAN GarmentMaster — 30 ans de robes en soie. Partenaire du patrimoine broderie Su. 30 maîtres avec 15+ ans."
+      },
+      "images": [
+        "fz-002-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "CoutureHouse",
+          "country": "FR",
+          "year": 2024,
+          "product": "Silk evening gown",
+          "quantity": 800
+        },
+        {
+          "brand": "HeritageQ",
+          "country": "IT",
+          "year": 2024,
+          "product": "Bespoke qipao",
+          "quantity": 500
+        },
+        {
+          "brand": "SilkBrand",
+          "country": "AE",
+          "year": 2023,
+          "product": "Silk sleepwear",
+          "quantity": 3000
+        }
+      ],
+      "contact": {
+        "manager": "Ms. Yang",
+        "phone": "+86-757-8888-0011",
+        "email": "fz011@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000011"
+      }
+    },
+    {
+      "id": "fz-012",
+      "name": {
+        "zh": "佛山衣主 · 高明家纺厂",
+        "en": "FOSHAN GarmentMaster · Gaoming Homewear",
+        "es": "FOSHAN GarmentMaster · Hogar Gaoming",
+        "ru": "FOSHAN GarmentMaster · Гаомин Домашняя",
+        "ar": "FOSHAN GarmentMaster · قاومينغ منزلية",
+        "fr": "FOSHAN GarmentMaster · Gaoming Maison"
+      },
+      "city": {
+        "zh": "佛山高明",
+        "en": "Foshan Gaoming",
+        "es": "Foshan Gaoming",
+        "ru": "Фошань Гаомин",
+        "ar": "فوشان قاومينغ",
+        "fr": "Foshan Gaoming"
+      },
+      "region": "foshan",
+      "established": 2008,
+      "factoryArea": 18000,
+      "employees": 360,
+      "monthlyCapacity": 280000,
+      "moq": 300,
+      "leadTimeDays": 30,
+      "categories": [
+        "home"
+      ],
+      "certifications": [
+        "BSCI",
+        "OEKO-TEX",
+        "GOTS"
+      ],
+      "equipment": {
+        "sewingMachines": 380,
+        "cuttingLines": 7,
+        "embroideryMachines": 6,
+        "printingLines": 5
+      },
+      "specialties": {
+        "zh": [
+          "家居服套装",
+          "法兰绒睡衣",
+          "真丝睡衣",
+          "亲子家居"
+        ],
+        "en": [
+          "Homewear sets",
+          "Flannel pajamas",
+          "Silk sleepwear",
+          "Matching family sets"
+        ],
+        "es": [
+          "Conjuntos de hogar",
+          "Pijamas de franela",
+          "Ropa de dormir de seda",
+          "Sets familiares"
+        ],
+        "ru": [
+          "Домашние комплекты",
+          "Фланелевые пижамы",
+          "Шёлковая одежда для сна",
+          "Семейные комплекты"
+        ],
+        "ar": [
+          "أطقم منزلية",
+          "بيجامة فلانيل",
+          "ملابس نوم حرير",
+          "أطقم عائلية"
+        ],
+        "fr": [
+          "Ensembles maison",
+          "Pyjamas flanelle",
+          "Soie睡衣",
+          "Ensembles famille"
+        ]
+      },
+      "intro": {
+        "zh": "佛山衣主高明家纺厂，3.5 万平米现代厂房，专精家居服/睡衣全品类，可承接 100% 棉+莫代尔+竹纤维等亲肤面料。",
+        "en": "FOSHAN GarmentMaster Gaoming Homewear — 35,000 m² modern facility. Specializes in homewear & sleepwear. Supports 100% cotton / Modal / bamboo fiber skin-friendly fabrics.",
+        "es": "Hogar Gaoming de FOSHAN GarmentMaster — 35,000 m² modernos. Algodón/Modal/bambú amigable con la piel.",
+        "ru": "Домашняя одежда Гаомин FOSHAN GarmentMaster — 35 000 м². Хлопок/Модал/бамбук.",
+        "ar": "ملابس منزلية قاومينغ لـ FOSHAN GarmentMaster - 35,000 متر مربع. قطن/مودال/خيزران.",
+        "fr": "Maison Gaoming de FOSHAN GarmentMaster — 35 000 m² modernes. Coton/Modal/bambou doux."
+      },
+      "images": [
+        "fz-002-1.jpg"
+      ],
+      "cases": [
+        {
+          "brand": "CozyHome",
+          "country": "US",
+          "year": 2024,
+          "product": "Pajama set",
+          "quantity": 60000
+        },
+        {
+          "brand": "FamilyWear",
+          "country": "JP",
+          "year": 2024,
+          "product": "Matching set",
+          "quantity": 40000
+        },
+        {
+          "brand": "SilkNight",
+          "country": "AE",
+          "year": 2023,
+          "product": "Silk pajamas",
+          "quantity": 18000
+        }
+      ],
+      "contact": {
+        "manager": "Mr. Guo",
+        "phone": "+86-757-8888-0012",
+        "email": "fz012@foshan-garmentmaster.com",
+        "whatsapp": "+8613800000012"
+      }
+    }
+  ]
+}

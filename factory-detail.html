@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-meta="title" data-i18n="factoryDetail.overview">工厂详情 — 佛山衣主</title>
+  <meta name="description" content="">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2300e0a4'/><text x='16' y='22' text-anchor='middle' font-family='monospace' font-weight='900' font-size='14' fill='%230a0e14'>GF</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="factory-detail">
+
+  <div data-site-header-slot></div>
+
+  <main id="main">
+
+    <section class="fd-hero" aria-label="Factory hero">
+      <div class="container">
+        <a href="factories.html" class="fd-hero__back" data-i18n="factoryDetail.back">← 返回工厂列表</a>
+        <div class="fd-hero__id" data-fd-id>// FZ-001</div>
+        <h1 class="fd-hero__title" data-fd-name>Loading…</h1>
+        <div class="fd-hero__loc" data-fd-loc></div>
+        <p class="fd-hero__intro" data-fd-intro></p>
+        <div class="fd-hero__actions">
+          <a href="contact.html" class="btn btn--primary btn--clip" data-fd-inquire>
+            <span data-i18n="factoryDetail.actions.inquire">立即询盘</span>
+            <span class="arrow">→</span>
+          </a>
+          <button class="btn btn--ghost" data-fd-share>
+            <span data-i18n="factoryDetail.actions.share">分享</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="fd-stats" data-fd-stats>
+          <!-- 由 JS 注入 -->
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid">
+          <div class="col-7 col-sm-12">
+            <h2 class="fd-section__title" data-i18n="factoryDetail.overview">工厂概览</h2>
+            <p data-fd-intro2 style="color: var(--color-text-2); line-height: 1.7;"></p>
+          </div>
+          <div class="col-5 col-sm-12">
+            <h2 class="fd-section__title" data-i18n="factoryDetail.specialties">核心专长</h2>
+            <div class="tag-list" data-fd-specialties></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface-1">
+      <div class="container">
+        <h2 class="fd-section__title" data-i18n="factoryDetail.equipment">设备清单</h2>
+        <div style="overflow-x: auto;">
+          <table class="equipment-table" data-fd-equipment>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Qty</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- JS 注入 -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="fd-section__title" data-i18n="factoryDetail.certifications">认证资质</h2>
+        <div class="cert-wall" data-fd-certs></div>
+      </div>
+    </section>
+
+    <section class="surface-1">
+      <div class="container">
+        <h2 class="fd-section__title" data-i18n="factoryDetail.cases">合作案例</h2>
+        <div class="case-mini-list" data-fd-cases></div>
+      </div>
+    </section>
+
+    <section id="contact" class="surface-1">
+      <div class="container">
+        <h2 class="fd-section__title" data-i18n="factoryDetail.contact">联系方式</h2>
+        <div class="contact-grid" data-fd-contact></div>
+        <div class="mt-6 text-center">
+          <a href="contact.html" class="btn btn--primary btn--lg btn--clip">
+            <span data-i18n="common.inquireNow">立即询盘</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer-slot></div>
+
+  <script src="assets/i18n/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/factory-detail.js" defer></script>
+</body>
+</html>

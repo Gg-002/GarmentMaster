@@ -1,0 +1,273 @@
+/* ===================================================================
+ * layout.css — Grid, container, spacing utilities
+ * =================================================================== */
+
+/* ---------- Grid System (12 cols) ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-5);
+}
+
+.grid--gap-sm { gap: var(--space-4); }
+.grid--gap-lg { gap: var(--space-6); }
+
+.col-1  { grid-column: span 1; }
+.col-2  { grid-column: span 2; }
+.col-3  { grid-column: span 3; }
+.col-4  { grid-column: span 4; }
+.col-5  { grid-column: span 5; }
+.col-6  { grid-column: span 6; }
+.col-7  { grid-column: span 7; }
+.col-8  { grid-column: span 8; }
+.col-9  { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+/* Asymmetric: span from col X */
+.col-start-1 { grid-column-start: 1; }
+.col-start-2 { grid-column-start: 2; }
+.col-start-3 { grid-column-start: 3; }
+.col-start-4 { grid-column-start: 4; }
+.col-start-5 { grid-column-start: 5; }
+.col-start-6 { grid-column-start: 6; }
+.col-start-7 { grid-column-start: 7; }
+.col-start-8 { grid-column-start: 8; }
+
+@media (max-width: 991.98px) {
+  .col-md-1  { grid-column: span 1; }
+  .col-md-2  { grid-column: span 2; }
+  .col-md-3  { grid-column: span 3; }
+  .col-md-4  { grid-column: span 4; }
+  .col-md-5  { grid-column: span 5; }
+  .col-md-6  { grid-column: span 6; }
+  .col-md-7  { grid-column: span 7; }
+  .col-md-8  { grid-column: span 8; }
+  .col-md-9  { grid-column: span 9; }
+  .col-md-10 { grid-column: span 10; }
+  .col-md-11 { grid-column: span 11; }
+  .col-md-12 { grid-column: span 12; }
+  .col-md-start-1 { grid-column-start: 1; }
+  .col-md-start-2 { grid-column-start: 2; }
+  .col-md-start-3 { grid-column-start: 3; }
+}
+
+@media (max-width: 767.98px) {
+  .grid {
+    gap: var(--space-4);
+  }
+  .col-sm-1  { grid-column: span 1; }
+  .col-sm-2  { grid-column: span 2; }
+  .col-sm-3  { grid-column: span 3; }
+  .col-sm-4  { grid-column: span 4; }
+  .col-sm-6  { grid-column: span 6; }
+  .col-sm-12 { grid-column: span 12; }
+  .col-sm-start-1 { grid-column-start: 1; }
+}
+
+/* ---------- Flex helpers ---------- */
+.flex { display: flex; }
+.flex-col { display: flex; flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.gap-5 { gap: var(--space-5); }
+.gap-6 { gap: var(--space-6); }
+
+/* ---------- Stack (vertical rhythm) ---------- */
+.stack > * + * { margin-block-start: var(--stack-gap, 1rem); }
+.stack-2 { --stack-gap: 0.5rem; }
+.stack-3 { --stack-gap: 0.75rem; }
+.stack-4 { --stack-gap: 1rem; }
+.stack-5 { --stack-gap: 1.5rem; }
+.stack-6 { --stack-gap: 2rem; }
+.stack-7 { --stack-gap: 3rem; }
+
+/* ---------- Spacing utilities ---------- */
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-5 { margin-top: var(--space-5); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-7 { margin-top: var(--space-7); }
+.mt-8 { margin-top: var(--space-8); }
+
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-5 { margin-bottom: var(--space-5); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-7 { margin-bottom: var(--space-7); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+.py-4 { padding-block: var(--space-4); }
+.py-5 { padding-block: var(--space-5); }
+.py-6 { padding-block: var(--space-6); }
+.py-7 { padding-block: var(--space-7); }
+.py-8 { padding-block: var(--space-8); }
+
+.px-4 { padding-inline: var(--space-4); }
+.px-5 { padding-inline: var(--space-5); }
+.px-6 { padding-inline: var(--space-6); }
+
+/* ---------- Text helpers ---------- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+@media (max-width: 767.98px) {
+  .sm\:text-center { text-align: center; }
+  .sm\:text-left { text-align: left; }
+}
+
+.text-xs { font-size: var(--fs-xs); }
+.text-sm { font-size: var(--fs-sm); }
+.text-base { font-size: var(--fs-base); }
+.text-md { font-size: var(--fs-md); }
+.text-lg { font-size: var(--fs-lg); }
+.text-xl { font-size: var(--fs-xl); }
+.text-2xl { font-size: var(--fs-2xl); }
+.text-3xl { font-size: var(--fs-3xl); }
+.text-4xl { font-size: var(--fs-4xl); }
+.text-hero { font-size: var(--fs-hero); }
+
+.font-mono { font-family: var(--font-mono); }
+.font-bold { font-weight: 700; }
+.font-black { font-weight: 900; }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- Display helpers ---------- */
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+@media (max-width: 767.98px) {
+  .sm\:hidden { display: none; }
+}
+@media (min-width: 768px) {
+  .sm\:show { display: none; }
+}
+
+/* ---------- Section header layout ---------- */
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-block-end: var(--space-7);
+  position: relative;
+  z-index: 1;
+}
+
+.section-head--center {
+  align-items: center;
+  text-align: center;
+}
+
+.section-head--center .section-lead {
+  margin-inline: auto;
+}
+
+@media (min-width: 992px) {
+  .section-head--row {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .section-head--row .section-lead {
+    max-width: 40ch;
+  }
+}
+
+/* ---------- Two-col hero layout ---------- */
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .split {
+    grid-template-columns: 7fr 5fr;
+    gap: var(--space-8);
+  }
+  .split--reverse {
+    grid-template-columns: 5fr 7fr;
+  }
+  .split--equal {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- Stat / KPI row ---------- */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--color-border-soft);
+  border: 1px solid var(--color-border-soft);
+}
+
+.stat-cell {
+  padding: var(--space-6) var(--space-5);
+  background: var(--color-bg-2);
+  position: relative;
+  transition: background var(--t-base) var(--ease-out);
+}
+.stat-cell:hover {
+  background: var(--color-bg-3);
+}
+.stat-cell__num {
+  font-family: var(--font-mono);
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-block-end: var(--space-2);
+}
+.stat-cell__num-suffix {
+  color: var(--color-text-2);
+  font-size: 0.6em;
+  margin-inline-start: 0.2em;
+  font-weight: 500;
+}
+.stat-cell__label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-mute);
+}
+
+/* ---------- Aspect ratio helpers ---------- */
+.ratio-1-1 { aspect-ratio: 1 / 1; }
+.ratio-4-3 { aspect-ratio: 4 / 3; }
+.ratio-3-2 { aspect-ratio: 3 / 2; }
+.ratio-16-9 { aspect-ratio: 16 / 9; }
+.ratio-21-9 { aspect-ratio: 21 / 9; }
+
+/* ---------- Visually separate blocks ---------- */
+.surface-1 { background: var(--color-bg-2); }
+.surface-2 { background: var(--color-bg-3); }
+.surface-3 {
+  background:
+    linear-gradient(180deg, transparent, rgba(0, 224, 164, 0.02) 50%, transparent),
+    var(--color-bg-2);
+}

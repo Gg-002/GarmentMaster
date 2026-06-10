@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://garmentforge.com/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://garmentforge.com/index.html#lang=zh-CN"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://garmentforge.com/index.html#lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es"    href="https://garmentforge.com/index.html#lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ru"    href="https://garmentforge.com/index.html#lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="ar"    href="https://garmentforge.com/index.html#lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="fr"    href="https://garmentforge.com/index.html#lang=fr"/>
+  </url>
+
+  <url>
+    <loc>https://garmentforge.com/factories.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://garmentforge.com/factory-detail.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://garmentforge.com/services.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://garmentforge.com/cases.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://garmentforge.com/about.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://garmentforge.com/contact.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
