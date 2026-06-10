@@ -1,8 +1,9 @@
 /* ===================================================================
- * base.css — FOSHAN GarmentMaster Global Foundation
+ * base.css — FOSHAN GarmentMaster 站点基础样式 (儿童主题风格)
  * --------------------------------------------------------------------
- * 视觉基线: 暗色工业风 + 炫酷制造业审美
- * Author: FOSHAN GarmentMaster Team
+ * 设计语言: 温馨、活泼、明亮
+ * 主色调: 桃粉 / 薄荷绿 / 蜜桃黄 / 天空蓝 / 奶油白
+ * 字体: Baloo 2 (圆体) + Noto Sans SC
  * =================================================================== */
 
 /* ---------- CSS Reset (modern minimal) ---------- */
@@ -25,12 +26,15 @@ html {
 
 body {
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1.65;
   font-family: var(--font-body);
   font-size: 16px;
   color: var(--color-text);
   background-color: var(--color-bg);
-  background-image: var(--bg-grid);
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 192, 203, 0.15) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(135, 206, 235, 0.12) 0%, transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(255, 223, 142, 0.08) 0%, transparent 50%);
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -76,45 +80,48 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
 
-/* ---------- CSS Variables (Design Tokens) ---------- */
+/* ---------- CSS Variables (Kids Theme Design Tokens) ---------- */
 :root {
-  /* Color tokens */
-  --color-bg: #0a0e14;
-  --color-bg-2: #11161f;
-  --color-bg-3: #1a2230;
-  --color-bg-elev: #0d1218;
-  --color-border: #2a3344;
-  --color-border-soft: #1d2532;
+  /* 明亮柔和配色 */
+  --color-bg: #FFF8F3;                    /* 奶油白背景 */
+  --color-bg-2: #FFFFFF;                  /* 卡片白 */
+  --color-bg-3: #FFEEF3;                  /* 浅粉卡片 */
+  --color-bg-elev: #F7F2EC;
 
-  --color-text: #e6edf3;
-  --color-text-2: #b8c2cf;
-  --color-text-mute: #8b98ab;
-  --color-text-dim: #5a6677;
+  --color-text: #3D2E2E;                  /* 深棕文字 */
+  --color-text-2: #5A4848;
+  --color-text-mute: #8B7A7A;
+  --color-text-dim: #B5A8A8;
 
-  --color-accent: #00e0a4;
-  --color-accent-2: #ff6b35;
-  --color-cool: #4da3ff;
-  --color-metal: #c9d1d9;
-  --color-danger: #ff4d6d;
-  --color-success: #00e0a4;
+  --color-border: #FFE0E8;                /* 浅粉边框 */
+  --color-border-soft: #FFF0F4;
 
-  /* Surface tokens */
-  --surface-1: var(--color-bg-2);
-  --surface-2: var(--color-bg-3);
-  --surface-glow: rgba(0, 224, 164, 0.08);
+  /* 主题色：4 色糖果色调 */
+  --color-primary: #FF6B9D;               /* 桃粉主色 */
+  --color-primary-dark: #E5508A;
+  --color-secondary: #6BCFE3;             /* 天空蓝 */
+  --color-mint: #8FE3C9;                  /* 薄荷绿 */
+  --color-yellow: #FFD93D;                /* 蜜糖黄 */
+  --color-coral: #FF8FA3;                 /* 珊瑚粉 */
+  --color-lavender: #C9B1FF;               /* 薰衣草紫 */
 
-  /* Typography */
-  --font-body: "Inter", "Noto Sans SC", "Noto Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", Menlo, Consolas, monospace;
-  --font-display: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* 主题色引用别名（与现有 CSS 兼容）*/
+  --color-accent: var(--color-primary);
+  --color-accent-2: var(--color-coral);
+  --color-cool: var(--color-secondary);
 
-  /* Type scale */
+  /* 字体：圆润活泼 */
+  --font-body: "Quicksand", "Noto Sans SC", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-display: "Baloo 2", "Quicksand", "Noto Sans SC", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* 字号 */
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
@@ -123,12 +130,12 @@ h6 {
   --fs-xl: 1.5rem;
   --fs-2xl: 2rem;
   --fs-3xl: 2.5rem;
-  --fs-4xl: clamp(2.25rem, 4vw, 3.5rem);
-  --fs-5xl: clamp(2.75rem, 6vw, 4.5rem);
-  --fs-hero: clamp(3rem, 8vw, 7rem);
-  --fs-mega: clamp(4rem, 14vw, 12rem);
+  --fs-4xl: clamp(2rem, 4vw, 3.25rem);
+  --fs-5xl: clamp(2.5rem, 5vw, 4rem);
+  --fs-hero: clamp(2.5rem, 7vw, 5.5rem);
+  --fs-mega: clamp(3rem, 12vw, 10rem);
 
-  /* Spacing scale (8pt grid) */
+  /* 间距 */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -140,78 +147,74 @@ h6 {
   --space-9: 6rem;
   --space-10: 8rem;
 
-  /* Layout */
+  /* 布局 */
   --container: 1320px;
   --container-narrow: 960px;
   --container-wide: 1480px;
   --gutter: clamp(1rem, 3vw, 2rem);
-  --header-h: 72px;
+  --header-h: 80px;
 
-  /* Radius */
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+  /* 圆角（更圆润）*/
+  --radius-xs: 6px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-xl: 48px;
   --radius-pill: 999px;
 
-  /* Borders */
-  --bw: 1px;
-  --bw-2: 2px;
+  /* 阴影（柔和）*/
+  --shadow-sm: 0 4px 8px rgba(255, 107, 157, 0.08);
+  --shadow-md: 0 8px 24px rgba(255, 107, 157, 0.12);
+  --shadow-lg: 0 16px 40px rgba(255, 107, 157, 0.18);
+  --shadow-cute: 0 6px 0 0 rgba(255, 107, 157, 0.2);
+  --shadow-glow: 0 0 24px rgba(255, 107, 157, 0.3);
 
-  /* Shadows / Glows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
-  --glow-accent: 0 0 24px rgba(0, 224, 164, 0.25);
-  --glow-cool: 0 0 24px rgba(77, 163, 255, 0.25);
-
-  /* Motion */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --t-fast: 150ms;
-  --t-base: 240ms;
+  /* 动效 */
+  --ease-out: cubic-bezier(0.34, 1.56, 0.64, 1);  /* 弹性回弹 */
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --t-fast: 180ms;
+  --t-base: 280ms;
   --t-slow: 480ms;
 
-  /* Background pattern (industrial grid) */
-  --bg-grid: linear-gradient(rgba(42, 51, 68, 0.4) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(42, 51, 68, 0.4) 1px, transparent 1px);
-  --bg-grid-size: 64px 64px;
-  --bg-grid-mask: radial-gradient(ellipse 80% 60% at 50% 30%, #0a0e14 30%, transparent 80%);
+  /* 背景图案 (点状波点) */
+  --bg-dots: radial-gradient(circle, #FFD0DE 1px, transparent 1.5px);
+  --bg-dots-size: 24px 24px;
 }
 
 /* ---------- Selection ---------- */
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-bg);
+  background: var(--color-primary);
+  color: #fff;
 }
 
 /* ---------- Scrollbar ---------- */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--color-bg-2);
-}
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: #FFF0F4; }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: 6px;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-coral));
+  border-radius: var(--radius-pill);
+  border: 3px solid #FFF0F4;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent);
+  background: linear-gradient(180deg, var(--color-primary-dark), var(--color-primary));
 }
 
-/* ---------- Body backdrop (subtle industrial grid) ---------- */
+/* ---------- 浮动的童趣背景装饰 (云朵+星星) ---------- */
 body::before {
-  content: "";
+  content: "✦ ✧ ✶ ⋆ · · ☁︎ ☁︎";
   position: fixed;
   inset: 0;
-  z-index: -2;
-  background: var(--bg-grid);
-  background-size: var(--bg-grid-size);
-  -webkit-mask-image: var(--bg-grid-mask);
-  mask-image: var(--bg-grid-mask);
+  z-index: -1;
+  font-size: 1.5rem;
+  color: rgba(255, 192, 203, 0.25);
+  word-spacing: 200px;
+  letter-spacing: 100px;
+  line-height: 220px;
   pointer-events: none;
+  user-select: none;
+  white-space: pre-wrap;
+  overflow: hidden;
+  font-family: serif;
   opacity: 0.5;
 }
 
@@ -220,16 +223,15 @@ body::after {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: radial-gradient(
-      circle at 15% 10%,
-      rgba(0, 224, 164, 0.06) 0%,
-      transparent 35%
-    ),
-    radial-gradient(circle at 85% 80%, rgba(77, 163, 255, 0.05) 0%, transparent 40%);
+  background:
+    radial-gradient(ellipse 600px 200px at 20% 10%, rgba(255, 192, 203, 0.18), transparent 60%),
+    radial-gradient(ellipse 400px 150px at 80% 90%, rgba(135, 206, 235, 0.15), transparent 60%),
+    radial-gradient(ellipse 500px 200px at 95% 30%, rgba(255, 217, 61, 0.12), transparent 60%),
+    radial-gradient(ellipse 300px 100px at 5% 70%, rgba(143, 227, 201, 0.15), transparent 60%);
   pointer-events: none;
 }
 
-/* ---------- Utility classes ---------- */
+/* ---------- Container ---------- */
 .container {
   max-width: var(--container);
   margin-inline: auto;
@@ -247,62 +249,48 @@ body::after {
   font-feature-settings: "tnum" 1;
 }
 
-.muted {
-  color: var(--color-text-mute);
-}
-.dim {
-  color: var(--color-text-dim);
-}
+.muted { color: var(--color-text-mute); }
+.dim { color: var(--color-text-dim); }
 
-.accent {
-  color: var(--color-accent);
-}
-.accent-2 {
-  color: var(--color-accent-2);
-}
-.cool {
-  color: var(--color-cool);
-}
+.accent { color: var(--color-primary); }
+.accent-2 { color: var(--color-coral); }
+.cool { color: var(--color-secondary); }
 
-.text-up {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-.text-mono {
-  font-family: var(--font-mono);
-  font-size: 0.85em;
-  letter-spacing: 0.02em;
-}
-
-/* Section heading: code-comment style label */
+/* ---------- Section heading (圆角+糖果) ---------- */
 .section-tag {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
-  font-weight: 500;
-  color: var(--color-accent);
+  font-weight: 600;
+  color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  padding: 0.4rem 0.75rem;
-  border: 1px solid rgba(0, 224, 164, 0.3);
-  background: rgba(0, 224, 164, 0.05);
-  clip-path: polygon(0 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+  padding: 0.5rem 1rem;
+  border: 2px dashed var(--color-primary);
+  border-radius: var(--radius-pill);
+  background: #FFF0F4;
 }
 
 .section-title {
+  font-family: var(--font-display);
   font-size: var(--fs-5xl);
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-  margin-block-start: var(--space-4);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   color: var(--color-text);
+  margin-block-start: var(--space-4);
 }
 
 .section-title .accent {
   display: inline-block;
   position: relative;
+  color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-coral));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section-lead {
@@ -310,33 +298,34 @@ body::after {
   color: var(--color-text-2);
   max-width: 60ch;
   margin-block-start: var(--space-4);
+  line-height: 1.6;
 }
 
-/* Big background watermark number/letter */
+/* ---------- Big background watermark (粉嫩) ---------- */
 .bg-mark {
   position: absolute;
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: var(--fs-mega);
-  font-weight: 700;
-  color: var(--color-text);
-  opacity: 0.03;
+  font-weight: 900;
+  color: var(--color-primary);
+  opacity: 0.04;
   letter-spacing: -0.05em;
-  line-height: 0.85;
   pointer-events: none;
   user-select: none;
   z-index: 0;
+  line-height: 0.85;
 }
 
-/* Section spacing */
+/* ---------- Section spacing ---------- */
 section {
   position: relative;
   padding-block: clamp(4rem, 10vw, 8rem);
 }
 section + section {
-  border-top: 1px solid var(--color-border-soft);
+  border-top: 2px dashed var(--color-border);
 }
 
-/* Decorative corner brackets — for cards */
+/* ---------- Decorative corner brackets ---------- */
 .brackets {
   position: relative;
 }
@@ -344,34 +333,31 @@ section + section {
 .brackets::after {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 14px;
-  border: 1px solid var(--color-accent);
-  opacity: 0.6;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--color-primary);
+  border-radius: 4px;
+  opacity: 0.4;
   transition: opacity var(--t-base) var(--ease-out);
 }
 .brackets::before {
-  top: -2px;
-  left: -2px;
+  top: -4px; left: -4px;
   border-right: 0;
   border-bottom: 0;
 }
 .brackets::after {
-  bottom: -2px;
-  right: -2px;
+  bottom: -4px; right: -4px;
   border-left: 0;
   border-top: 0;
 }
 .brackets:hover::before,
-.brackets:hover::after {
-  opacity: 1;
-}
+.brackets:hover::after { opacity: 1; }
 
 /* Reusable: data-id corner label */
 .id-tag {
   position: absolute;
   top: 0.5rem;
-  left: 0.5rem;
+  inset-inline-start: 0.5rem;
   font-family: var(--font-mono);
   font-size: 0.65rem;
   color: var(--color-text-dim);
@@ -379,7 +365,6 @@ section + section {
   z-index: 2;
 }
 
-/* Reusable: hairline divider */
 .hr {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--color-border) 20%, var(--color-border) 80%, transparent);
@@ -387,23 +372,17 @@ section + section {
   margin-block: var(--space-7);
 }
 
-/* Skeleton loader */
 .skeleton {
-  background: linear-gradient(
-    90deg,
-    var(--color-bg-2) 0%,
-    var(--color-bg-3) 50%,
-    var(--color-bg-2) 100%
-  );
+  background: linear-gradient(90deg, var(--color-bg-3) 0%, #FFE8F0 50%, var(--color-bg-3) 100%);
   background-size: 200% 100%;
   animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  border-radius: var(--radius-md);
 }
 @keyframes skeleton-shimmer {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
 }
 
-/* Visually hidden (a11y) */
 .visually-hidden {
   position: absolute !important;
   width: 1px;
@@ -416,25 +395,22 @@ section + section {
   border: 0;
 }
 
-/* Focus styles */
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 3px dashed var(--color-primary);
   outline-offset: 3px;
-  border-radius: 2px;
+  border-radius: var(--radius-xs);
 }
 
-/* Reveal-on-scroll (used by main.js) */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+  transform: translateY(20px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
 }
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Stagger child reveals */
 .reveal-stagger > * {
   opacity: 0;
   transform: translateY(16px);
@@ -445,27 +421,21 @@ section + section {
   transform: translateY(0);
 }
 .reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; }
-.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.1s; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.10s; }
 .reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.15s; }
-.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.2s; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.20s; }
 .reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.25s; }
-.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.3s; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.30s; }
 .reveal-stagger.is-visible > *:nth-child(7) { transition-delay: 0.35s; }
-.reveal-stagger.is-visible > *:nth-child(8) { transition-delay: 0.4s; }
+.reveal-stagger.is-visible > *:nth-child(8) { transition-delay: 0.40s; }
 
-/* Print */
 @media print {
-  body::before,
-  body::after {
-    display: none;
-  }
   body {
     background: white;
     color: black;
   }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
